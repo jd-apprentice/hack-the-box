@@ -1,0 +1,18 @@
+name: Gitleaks - Shellcheck
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+jobs:
+  linter:
+    uses: jd-apprentice/jd-workflows/.github/workflows/linter.yml@main
+
+  gitleaks:
+    uses: jd-apprentice/jd-workflows/.github/workflows/gitleaks.yml@main
+    with:
+      runs-on: ubuntu-latest
+      name: Gitleaks
+    secrets:
+      gh_token: ${{ secrets.GITHUB_TOKEN }}
