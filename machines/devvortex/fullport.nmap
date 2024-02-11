@@ -1,0 +1,13 @@
+# Nmap 7.80 scan initiated Sun Feb 11 00:29:12 2024 as: nmap -sC -sV -Pn -oA fullport --min-rate 5000 10.10.11.242
+Nmap scan report for 10.10.11.242 (10.10.11.242)
+Host is up (0.17s latency).
+Not shown: 958 closed ports, 40 filtered ports
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.9 (Ubuntu Linux; protocol 2.0)
+80/tcp open  http    nginx 1.18.0 (Ubuntu)
+|_http-server-header: nginx/1.18.0 (Ubuntu)
+|_http-title: Did not follow redirect to http://devvortex.htb/
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Feb 11 00:29:26 2024 -- 1 IP address (1 host up) scanned in 14.09 seconds

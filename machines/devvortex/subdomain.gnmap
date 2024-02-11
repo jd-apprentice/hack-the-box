@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Sun Feb 11 01:51:09 2024 as: nmap --script dns-brute -oA subdomain devvortex.htb
+Host: 10.10.11.242 (dev.devvortex.htb)	Status: Up
+Host: 10.10.11.242 (dev.devvortex.htb)	Ports: 22/open/tcp//ssh///, 80/open/tcp//http///, 179/filtered/tcp//bgp///, 465/filtered/tcp//smtps///, 1035/filtered/tcp//multidropper///, 1076/filtered/tcp//sns_credit///, 1094/filtered/tcp//rootd///, 1600/filtered/tcp//issd///, 1863/filtered/tcp//msnp///, 5214/filtered/tcp//unknown///, 8222/filtered/tcp//unknown///, 23502/filtered/tcp//unknown///, 49161/filtered/tcp//unknown///	Ignored State: closed (987)
+# Nmap done at Sun Feb 11 01:51:55 2024 -- 1 IP address (1 host up) scanned in 46.09 seconds

@@ -1,0 +1,26 @@
+# Nmap 7.80 scan initiated Sun Feb 11 01:51:09 2024 as: nmap --script dns-brute -oA subdomain devvortex.htb
+Nmap scan report for devvortex.htb (10.10.11.242)
+Host is up (0.17s latency).
+rDNS record for 10.10.11.242: dev.devvortex.htb
+Not shown: 987 closed ports
+PORT      STATE    SERVICE
+22/tcp    open     ssh
+80/tcp    open     http
+179/tcp   filtered bgp
+465/tcp   filtered smtps
+1035/tcp  filtered multidropper
+1076/tcp  filtered sns_credit
+1094/tcp  filtered rootd
+1600/tcp  filtered issd
+1863/tcp  filtered msnp
+5214/tcp  filtered unknown
+8222/tcp  filtered unknown
+23502/tcp filtered unknown
+49161/tcp filtered unknown
+
+Host script results:
+| dns-brute: 
+|   DNS Brute-force hostnames: 
+|_    dev.devvortex.htb - 10.10.11.242
+
+# Nmap done at Sun Feb 11 01:51:55 2024 -- 1 IP address (1 host up) scanned in 46.09 seconds

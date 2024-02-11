@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Sun Feb 11 00:29:12 2024 as: nmap -sC -sV -Pn -oA fullport --min-rate 5000 10.10.11.242
+Host: 10.10.11.242 (10.10.11.242)	Status: Up
+Host: 10.10.11.242 (10.10.11.242)	Ports: 22/open/tcp//ssh//OpenSSH 8.2p1 Ubuntu 4ubuntu0.9 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//nginx 1.18.0 (Ubuntu)/
+# Nmap done at Sun Feb 11 00:29:26 2024 -- 1 IP address (1 host up) scanned in 14.09 seconds

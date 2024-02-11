@@ -1,0 +1,5 @@
+https://github.com/Acceis/exploit-CVE-2023-23752
+https://swisskyrepo.github.io/InternalAllTheThings/cheatsheets/shell-reverse-cheatsheet/#php
+https://stackoverflow.com/questions/5131931/how-to-connect-to-mysql-from-the-command-line
+https://hashes.com/en/tools/hash_identifier
+https://diegojoelcondoriquispe.medium.com/cve-2023-1326-poc-c8f2a59d0e00

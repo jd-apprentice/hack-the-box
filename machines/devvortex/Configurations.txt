@@ -1,0 +1,7 @@
+[+] http://dev.devvortex.htb
+Database Type     : mysqli
+Database Prefix   : sd4fg_
+Hostname          : localhost
+Database          : joomla
+Username          : lewis
+Password          : P4ntherg0t1n5r3c0n##
