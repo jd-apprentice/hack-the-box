@@ -1,0 +1,13 @@
+# Nmap 7.80 scan initiated Sun Feb 11 18:42:14 2024 as: nmap --script dns-brute -oA subdomain analytical.htb
+Nmap scan report for analytical.htb (10.10.11.233)
+Host is up (0.17s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+
+Host script results:
+| dns-brute: 
+|_  DNS Brute-force hostnames: No results.
+
+# Nmap done at Sun Feb 11 18:43:13 2024 -- 1 IP address (1 host up) scanned in 59.48 seconds

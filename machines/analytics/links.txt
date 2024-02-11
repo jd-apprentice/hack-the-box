@@ -1,0 +1,4 @@
+https://superuser.com/a/849306
+https://www.revshells.com/
+https://github.com/m3m0o/metabase-pre-auth-rce-poc
+https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS

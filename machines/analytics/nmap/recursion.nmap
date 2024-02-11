@@ -1,0 +1,8 @@
+# Nmap 7.80 scan initiated Sun Feb 11 18:48:23 2024 as: nmap --script dns-recursion -oA recursion analytical.htb
+Nmap scan report for analytical.htb (10.10.11.233)
+Host is up (0.17s latency).
+Not shown: 999 closed ports
+PORT   STATE SERVICE
+80/tcp open  http
+
+# Nmap done at Sun Feb 11 18:48:37 2024 -- 1 IP address (1 host up) scanned in 13.92 seconds
