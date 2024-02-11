@@ -1,0 +1,73 @@
+200      GET        0l        0w        0c http://10.129.225.131/config.php
+302      GET        0l        0w        0c http://10.129.225.131/logout.php => login.php
+200      GET        3l       12w      544c http://10.129.225.131/assets/images/favicon.png
+200      GET      211l      336w     5148c http://10.129.225.131/assets/js/main.js
+403      GET        1l       10w       61c http://10.129.225.131/assets/contact.php
+200      GET       33l      100w     4005c http://10.129.225.131/assets/images/portfolio/7.png
+200      GET        1l       32w      536c http://10.129.225.131/assets/images/f-shape-1.svg
+200      GET        1l      176w     2353c http://10.129.225.131/assets/images/enterprise.svg
+200      GET       48l      136w     1249c http://10.129.225.131/assets/js/ajax-contact.js
+200      GET       33l       97w     4443c http://10.129.225.131/assets/images/portfolio/4.png
+200      GET       42l      260w    22786c http://10.129.225.131/assets/images/slider/1.png
+200      GET       36l      101w     4128c http://10.129.225.131/assets/images/portfolio/9.png
+200      GET        3l      209w     8599c http://10.129.225.131/assets/js/vendor/modernizr-3.7.1.min.js
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://10.129.225.131/assets/css/ (Apache)
+200      GET       36l      103w     4449c http://10.129.225.131/assets/images/portfolio/8.png
+200      GET        5l      369w    21004c http://10.129.225.131/assets/js/popper.min.js
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://10.129.225.131/assets/js/ (Apache)
+200      GET       12l      557w    35445c http://10.129.225.131/assets/js/isotope.pkgd.min.js
+200      GET      119l      179w     1776c http://10.129.225.131/assets/css/slick.css
+200      GET      126l      811w    73256c http://10.129.225.131/assets/images/about.jpg
+200      GET      144l      915w    81652c http://10.129.225.131/assets/images/team-3.jpg
+200      GET       44l      380w     5564c http://10.129.225.131/assets/js/jquery.easing.min.js
+200      GET        1l      248w    42863c http://10.129.225.131/assets/js/slick.min.js
+200      GET       40l       77w      793c http://10.129.225.131/css/signin.css
+200      GET        7l      662w    58072c http://10.129.225.131/assets/js/bootstrap.min.js
+200      GET     3247l    10751w   113681c http://10.129.225.131/assets/css/style.css
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://10.129.225.131/assets/js/vendor (Apache)
+200      GET      142l      887w    84823c http://10.129.225.131/assets/images/team-1.jpg
+200      GET        5l     1434w    97163c http://10.129.225.131/assets/js/vendor/jquery-1.12.4.min.js
+200      GET     2208l     2886w    28218c http://10.129.225.131/assets/css/LineIcons.css
+200      GET        4l      212w    20216c http://10.129.225.131/assets/js/jquery.magnific-popup.min.js
+200      GET        6l     1429w   121200c http://10.129.225.131/css/bootstrap.min.css
+200      GET        7l      110w     5594c http://10.129.225.131/assets/js/imagesloaded.pkgd.min.js
+200      GET       19l       59w      655c http://10.129.225.131/assets/js/scrolling-nav.js
+200      GET        1l       75w      702c http://10.129.225.131/assets/images/logo.svg
+200      GET       34l       95w     4347c http://10.129.225.131/assets/images/portfolio/6.png
+200      GET        1l      142w     2214c http://10.129.225.131/assets/images/pro.svg
+200      GET       35l       94w     4448c http://10.129.225.131/assets/images/portfolio/2.png
+200      GET        1l      237w     3218c http://10.129.225.131/assets/images/basic.svg
+200      GET      933l     1573w    11304c http://10.129.225.131/assets/css/default.css
+200      GET       66l      468w    37986c http://10.129.225.131/assets/images/slider/3.png
+200      GET      101l      699w    57008c http://10.129.225.131/assets/images/slider/2.png
+200      GET      999l     3031w    58565c http://10.129.225.131/index.html
+200      GET      146l     1217w    99726c http://10.129.225.131/assets/images/team-2.jpg
+200      GET      351l      795w     6951c http://10.129.225.131/assets/css/magnific-popup.css
+200      GET       33l       93w     3864c http://10.129.225.131/assets/images/portfolio/3.png
+200      GET        1l       32w      539c http://10.129.225.131/assets/images/portfolio/shape.svg
+200      GET       34l      101w     4434c http://10.129.225.131/assets/images/portfolio/5.png
+200      GET       31l      221w    18427c http://10.129.225.131/assets/images/author-2.jpg
+200      GET       34l      101w     4163c http://10.129.225.131/assets/images/portfolio/1.png
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://10.129.225.131/assets/images/slider/ (Apache)
+200      GET       49l      269w    21630c http://10.129.225.131/assets/images/author-3.jpg
+200      GET       39l      254w    20806c http://10.129.225.131/assets/images/author-1.jpg
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://10.129.225.131/assets/ (Apache)
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://10.129.225.131/assets/images/ (Apache)
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://10.129.225.131/assets/images/portfolio/ (Apache)
+200      GET       32l      241w    19416c http://10.129.225.131/assets/images/author-4.jpg
+200      GET        1l       75w      705c http://10.129.225.131/assets/images/logo-2.svg
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://10.129.225.131/js/ (Apache)
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://10.129.225.131/css/ (Apache)
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://10.129.225.131/assets/fonts (Apache)
+200      GET        7l      432w    37045c http://10.129.225.131/js/bootstrap.min.js
+200      GET       39l      115w     1577c http://10.129.225.131/login.php
+200      GET        7l     1966w   155758c http://10.129.225.131/assets/css/bootstrap.min.css
+200      GET      999l     3031w    58565c http://10.129.225.131/
+200      GET       79l      215w     1411c http://10.129.225.131/css/stylesheet.css
+200      GET       13l       31w      484c http://10.129.225.131/js/npm.js
+200      GET        7l       12w    60774c http://10.129.225.131/assets/css/style.css.map
+200      GET     1626l     5909w   135628c http://10.129.225.131/assets/fonts/LineIcons.eot
+200      GET      206l     1252w    93284c http://10.129.225.131/assets/fonts/LineIcons.woff2
+200      GET      227l     1422w   117180c http://10.129.225.131/assets/fonts/LineIcons.woff
+200      GET     1626l     5908w   135448c http://10.129.225.131/assets/fonts/LineIcons.ttf
+200      GET     1559l    68101w   609222c http://10.129.225.131/assets/fonts/LineIcons.svg

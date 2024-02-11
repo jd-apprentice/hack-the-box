@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Sat Feb 10 22:55:27 2024 as: nmap -sC -sV -Pn -oA fullport --min-rate=10000 10.129.97.118
+Host: 10.129.97.118 (10.129.97.118)	Status: Up
+Host: 10.129.97.118 (10.129.97.118)	Ports: 21/open/tcp//ftp//vsftpd 3.0.3/, 80/open/tcp//http//Apache httpd 2.4.41 ((Ubuntu))/	Ignored State: closed (998)
+# Nmap done at Sat Feb 10 22:55:39 2024 -- 1 IP address (1 host up) scanned in 12.25 seconds

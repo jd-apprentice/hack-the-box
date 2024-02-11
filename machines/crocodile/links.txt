@@ -1,0 +1,3 @@
+https://stackoverflow.com/questions/3936911/how-can-i-login-anonymously-with-ftp-usr-bin-ftp
+https://github.com/danielmiessler/SecLists/tree/master/Discovery/Web-Content
+https://www.freecodecamp.org/news/what-is-nmap-and-how-to-use-it-a-tutorial-for-the-greatest-scanning-tool-of-all-time/
