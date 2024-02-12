@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Sun Feb 11 19:19:35 2024 as: nmap -sC -sV -oA version --min-rate 5000 bizness.htb
+Host: 10.10.11.252 (bizness.htb)	Status: Up
+Host: 10.10.11.252 (bizness.htb)	Ports: 22/open/tcp//ssh//OpenSSH 8.4p1 Debian 5+deb11u3 (protocol 2.0)/, 79/filtered/tcp//finger///, 80/open/tcp//http//nginx 1.18.0/, 416/filtered/tcp//silverplatter///, 443/open/tcp//ssl|http//nginx 1.18.0/, 1123/filtered/tcp//murray///, 2998/filtered/tcp//iss-realsec///, 3071/filtered/tcp//csd-mgmt-port///, 3826/filtered/tcp//wormux///, 4242/filtered/tcp//vrml-multi-use///, 10082/filtered/tcp//amandaidx///, 19801/filtered/tcp//unknown///	Ignored State: closed (988)
+# Nmap done at Sun Feb 11 19:19:57 2024 -- 1 IP address (1 host up) scanned in 22.25 seconds

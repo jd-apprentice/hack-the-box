@@ -1,0 +1,32 @@
+# Nmap 7.80 scan initiated Sun Feb 11 19:19:35 2024 as: nmap -sC -sV -oA version --min-rate 5000 bizness.htb
+Nmap scan report for bizness.htb (10.10.11.252)
+Host is up (0.17s latency).
+Not shown: 988 closed ports
+PORT      STATE    SERVICE        VERSION
+22/tcp    open     ssh            OpenSSH 8.4p1 Debian 5+deb11u3 (protocol 2.0)
+79/tcp    filtered finger
+80/tcp    open     http           nginx 1.18.0
+|_http-server-header: nginx/1.18.0
+|_http-title: Did not follow redirect to https://bizness.htb/
+416/tcp   filtered silverplatter
+443/tcp   open     ssl/http       nginx 1.18.0
+|_http-server-header: nginx/1.18.0
+|_http-title: 400 The plain HTTP request was sent to HTTPS port
+| ssl-cert: Subject: organizationName=Internet Widgits Pty Ltd/stateOrProvinceName=Some-State/countryName=UK
+| Not valid before: 2023-12-14T20:03:40
+|_Not valid after:  2328-11-10T20:03:40
+| tls-alpn: 
+|_  http/1.1
+| tls-nextprotoneg: 
+|_  http/1.1
+1123/tcp  filtered murray
+2998/tcp  filtered iss-realsec
+3071/tcp  filtered csd-mgmt-port
+3826/tcp  filtered wormux
+4242/tcp  filtered vrml-multi-use
+10082/tcp filtered amandaidx
+19801/tcp filtered unknown
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Feb 11 19:19:57 2024 -- 1 IP address (1 host up) scanned in 22.25 seconds

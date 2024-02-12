@@ -1,0 +1,25 @@
+[21:32:49] 302 -    0B  - /accounting  ->  https://bizness.htb/accounting/
+[21:33:10] 302 -    0B  - /catalog  ->  https://bizness.htb/catalog/
+[21:33:11] 302 -    0B  - /common  ->  https://bizness.htb/common/
+[21:33:11] 404 -  762B  - /common/
+[21:33:11] 404 -  780B  - /common/config/api.ini
+[21:33:11] 404 -  779B  - /common/config/db.ini
+[21:33:13] 302 -    0B  - /content  ->  https://bizness.htb/content/
+[21:33:13] 302 -    0B  - /content/  ->  https://bizness.htb/content/control/main
+[21:33:13] 302 -    0B  - /content/debug.log  ->  https://bizness.htb/content/control/main
+[21:33:14] 200 -   34KB - /control/
+[21:33:14] 200 -   34KB - /control
+[21:33:16] 404 -  741B  - /default.jsp
+[21:33:16] 404 -  763B  - /default.html
+[21:33:18] 302 -    0B  - /error  ->  https://bizness.htb/error/;jsessionid=119B6A4C8E4FE0A677ABFD4850A303A8.jvm1
+[21:33:18] 404 -  761B  - /error/
+[21:33:19] 302 -    0B  - /example  ->  https://bizness.htb/example/
+[21:33:23] 302 -    0B  - /images  ->  https://bizness.htb/images/
+[21:33:23] 404 -  769B  - /images/c99.php
+[21:33:23] 404 -  762B  - /images/
+[21:33:23] 404 -  769B  - /images/Sym.php
+[21:33:23] 404 -  768B  - /images/README
+[21:33:24] 302 -    0B  - /index.jsp  ->  https://bizness.htb/control/main
+[21:33:24] 200 -   27KB - /index.html
+[21:33:44] 200 -   21B  - /solr/admin/
+[21:33:44] 200 -   21B  - /solr/admin/file/?file=solrconfig.xml

@@ -1,0 +1,14 @@
+# Nmap 7.80 scan initiated Sun Feb 11 19:15:59 2024 as: nmap --script dns-brute -oA dns-brute bizness.htb
+Nmap scan report for bizness.htb (10.10.11.252)
+Host is up (0.17s latency).
+Not shown: 997 closed ports
+PORT    STATE SERVICE
+22/tcp  open  ssh
+80/tcp  open  http
+443/tcp open  https
+
+Host script results:
+| dns-brute: 
+|_  DNS Brute-force hostnames: No results.
+
+# Nmap done at Sun Feb 11 19:16:51 2024 -- 1 IP address (1 host up) scanned in 52.45 seconds
