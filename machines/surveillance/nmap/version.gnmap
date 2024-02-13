@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Sun Feb 11 23:26:52 2024 as: nmap -sC -sV -oA version --min-rate 2500 10.10.11.245
+Host: 10.10.11.245 (surveillance.htb)	Status: Up
+Host: 10.10.11.245 (surveillance.htb)	Ports: 9/filtered/tcp//discard///, 22/open/tcp//ssh//OpenSSH 8.9p1 Ubuntu 3ubuntu0.4 (Ubuntu Linux; protocol 2.0)/, 49/filtered/tcp//tacacs///, 80/open/tcp//http//nginx 1.18.0 (Ubuntu)/, 1036/filtered/tcp//nsstp///, 1077/filtered/tcp//imgames///, 1099/filtered/tcp//rmiregistry///, 1112/filtered/tcp//msql///, 1259/filtered/tcp//opennl-voice///, 1900/filtered/tcp//upnp///, 2049/filtered/tcp//nfs///, 2809/filtered/tcp//corbaloc///, 5901/filtered/tcp//vnc-1///, 8291/filtered/tcp//unknown///, 9898/filtered/tcp//monkeycom///, 17988/filtered/tcp//unknown///, 49152/filtered/tcp//unknown///	Ignored State: closed (983)
+# Nmap done at Sun Feb 11 23:27:07 2024 -- 1 IP address (1 host up) scanned in 14.92 seconds

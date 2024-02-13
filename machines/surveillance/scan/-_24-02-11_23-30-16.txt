@@ -1,0 +1,26 @@
+# Dirsearch started Sun Feb 11 23:30:18 2024 as: dirsearch.py -u http://surveillance.htb/
+
+301   178B   http://surveillance.htb:80/js    -> REDIRECTS TO: http://surveillance.htb/js/
+200     0B   http://surveillance.htb:80/.gitkeep
+200   304B   http://surveillance.htb:80/.htaccess
+302     0B   http://surveillance.htb:80/admin    -> REDIRECTS TO: http://surveillance.htb/admin/login
+302     0B   http://surveillance.htb:80/admin/?/login    -> REDIRECTS TO: http://surveillance.htb/admin/login
+302     0B   http://surveillance.htb:80/admin/    -> REDIRECTS TO: http://surveillance.htb/admin/login
+302     0B   http://surveillance.htb:80/admin/admin    -> REDIRECTS TO: http://surveillance.htb/admin/login
+200    38KB  http://surveillance.htb:80/admin/admin/login
+302     0B   http://surveillance.htb:80/admin/index    -> REDIRECTS TO: http://surveillance.htb/admin/login
+200    38KB  http://surveillance.htb:80/admin/login
+301   178B   http://surveillance.htb:80/css    -> REDIRECTS TO: http://surveillance.htb/css/
+301   178B   http://surveillance.htb:80/fonts    -> REDIRECTS TO: http://surveillance.htb/fonts/
+301   178B   http://surveillance.htb:80/images    -> REDIRECTS TO: http://surveillance.htb/images/
+403   564B   http://surveillance.htb:80/images/
+301   178B   http://surveillance.htb:80/img    -> REDIRECTS TO: http://surveillance.htb/img/
+200     1B   http://surveillance.htb:80/index
+200    16KB  http://surveillance.htb:80/index.php
+200     1B   http://surveillance.htb:80/index.php.
+403   564B   http://surveillance.htb:80/js/
+302     0B   http://surveillance.htb:80/logout    -> REDIRECTS TO: http://surveillance.htb/
+302     0B   http://surveillance.htb:80/logout/    -> REDIRECTS TO: http://surveillance.htb/
+200     1KB  http://surveillance.htb:80/web.config
+418    24KB  http://surveillance.htb:80/wp-admin/
+418    24KB  http://surveillance.htb:80/wp-admin

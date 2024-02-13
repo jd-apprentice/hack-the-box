@@ -1,0 +1,28 @@
+# Nmap 7.80 scan initiated Sun Feb 11 23:26:52 2024 as: nmap -sC -sV -oA version --min-rate 2500 10.10.11.245
+Nmap scan report for surveillance.htb (10.10.11.245)
+Host is up (0.17s latency).
+Not shown: 983 closed ports
+PORT      STATE    SERVICE      VERSION
+9/tcp     filtered discard
+22/tcp    open     ssh          OpenSSH 8.9p1 Ubuntu 3ubuntu0.4 (Ubuntu Linux; protocol 2.0)
+49/tcp    filtered tacacs
+80/tcp    open     http         nginx 1.18.0 (Ubuntu)
+|_http-server-header: nginx/1.18.0 (Ubuntu)
+|_http-title:  Surveillance 
+1036/tcp  filtered nsstp
+1077/tcp  filtered imgames
+1099/tcp  filtered rmiregistry
+1112/tcp  filtered msql
+1259/tcp  filtered opennl-voice
+1900/tcp  filtered upnp
+2049/tcp  filtered nfs
+2809/tcp  filtered corbaloc
+5901/tcp  filtered vnc-1
+8291/tcp  filtered unknown
+9898/tcp  filtered monkeycom
+17988/tcp filtered unknown
+49152/tcp filtered unknown
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Feb 11 23:27:07 2024 -- 1 IP address (1 host up) scanned in 14.92 seconds
