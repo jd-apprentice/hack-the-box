@@ -1,0 +1,2 @@
+# Nmap 7.80 scan initiated Mon Feb 12 22:37:40 2024 as: nmap --script dns-brute -oA zoneminder http://localhost:2222/?view=login
+# Nmap done at Mon Feb 12 22:37:40 2024 -- 0 IP addresses (0 hosts up) scanned in 0.22 seconds
