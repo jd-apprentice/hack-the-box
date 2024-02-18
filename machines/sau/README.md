@@ -95,8 +95,8 @@ cat /root/root.txt
 ```
 
 ## Links
-https://github.com/entr0pie/CVE-2023-27163
-https://github.com/spookier/Maltrail-v0.53-Exploit
-https://medium.com/@zenmoviefornotification/saidov-maxim-cve-2023-26604-c1232a526ba7
-https://notes.sjtu.edu.cn/s/MUUhEymt7#
-https://gtfobins.github.io/gtfobins/systemctl/
+- https://github.com/entr0pie/CVE-2023-27163
+- https://github.com/spookier/Maltrail-v0.53-Exploit
+- https://medium.com/@zenmoviefornotification/saidov-maxim-cve-2023-26604-c1232a526ba7
+- https://notes.sjtu.edu.cn/s/MUUhEymt7#
+- https://gtfobins.github.io/gtfobins/systemctl/
