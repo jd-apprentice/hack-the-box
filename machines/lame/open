@@ -1,0 +1,16 @@
+# Nmap 7.80 scan initiated Sun Feb 18 19:49:20 2024 as: nmap -p1-1000 -sV -Pn -T4 --min-rate 5000 -vvv -o version_full 10.10.10.3
+Nmap scan report for 10.10.10.3 (10.10.10.3)
+Host is up, received user-set (0.25s latency).
+Scanned at 2024-02-18 19:49:21 -03 for 13s
+Not shown: 996 filtered ports
+Reason: 996 no-responses
+PORT    STATE SERVICE     REASON  VERSION
+21/tcp  open  ftp         syn-ack vsftpd 2.3.4
+22/tcp  open  ssh         syn-ack OpenSSH 4.7p1 Debian 8ubuntu1 (protocol 2.0)
+139/tcp open  netbios-ssn syn-ack Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp open  netbios-ssn syn-ack Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Feb 18 19:49:34 2024 -- 1 IP address (1 host up) scanned in 13.92 seconds
