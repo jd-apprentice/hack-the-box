@@ -1,0 +1,10 @@
+# Nmap 7.80 scan initiated Sun Feb 18 01:50:02 2024 as: nmap -p 80 -T4 -sC --min-rate 5000 -vvv -o scan 10.10.11.224
+Nmap scan report for 10.10.11.224 (10.10.11.224)
+Host is up, received conn-refused (0.25s latency).
+Scanned at 2024-02-18 01:50:03 -03 for 2s
+
+PORT   STATE    SERVICE REASON
+80/tcp filtered http    no-response
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Sun Feb 18 01:50:05 2024 -- 1 IP address (1 host up) scanned in 3.07 seconds

@@ -1,0 +1,20 @@
+# Nmap 7.80 scan initiated Sun Feb 18 02:51:22 2024 as: nmap -T4 --min-rate 5000 -vvv -o all 10.10.11.224
+Nmap scan report for 10.10.11.224 (10.10.11.224)
+Host is up, received conn-refused (0.25s latency).
+Scanned at 2024-02-18 02:51:22 -03 for 1s
+Not shown: 990 closed ports
+Reason: 990 conn-refused
+PORT      STATE    SERVICE        REASON
+22/tcp    open     ssh            syn-ack
+80/tcp    filtered http           no-response
+987/tcp   filtered unknown        no-response
+1089/tcp  filtered ff-annunc      no-response
+1277/tcp  filtered miva-mqs       no-response
+1309/tcp  filtered jtag-server    no-response
+1334/tcp  filtered writesrv       no-response
+3918/tcp  filtered pktcablemmcops no-response
+49159/tcp filtered unknown        no-response
+55555/tcp open     unknown        syn-ack
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Sun Feb 18 02:51:23 2024 -- 1 IP address (1 host up) scanned in 0.97 seconds
