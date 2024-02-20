@@ -1,0 +1,75 @@
+200      GET       12l       63w     1392c http://10.10.10.68/js/jquery.mousewheel.min.js
+200      GET        8l       35w     2447c http://10.10.10.68/images/logo.png
+200      GET       58l      254w     1783c http://10.10.10.68/js/jquery.easing.1.3.js
+200      GET       96l      166w     1661c http://10.10.10.68/css/clear.css
+200      GET       13l      113w     4313c http://10.10.10.68/js/jquery.touchSwipe.min.js
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://10.10.10.68/js/ (Apache)
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://10.10.10.68/images/ (Apache)
+200      GET     1412l     2291w    24164c http://10.10.10.68/style.css
+200      GET        8l       73w     2429c http://10.10.10.68/js/html5.js
+200      GET        4l       66w    29063c http://10.10.10.68/css/font-awesome.min.css
+200      GET      893l     3885w    26643c http://10.10.10.68/js/imagesloaded.pkgd.js
+200      GET        6l       20w     1537c http://10.10.10.68/images/arrow.png
+200      GET        7l       23w     1322c http://10.10.10.68/images/favicon.png
+200      GET       15l      672w    36079c http://10.10.10.68/js/jquery.carouFredSel-6.0.0-packed.js
+200      GET      154l     1009w    73725c http://10.10.10.68/images/ajax-document-loader.gif
+200      GET        6l     1435w    97184c http://10.10.10.68/js/jquery.js
+200      GET      262l      560w     8904c http://10.10.10.68/js/main.js
+200      GET      154l      394w     7477c http://10.10.10.68/single.html
+200      GET       32l      116w     1222c http://10.10.10.68/css/carouFredSel.css
+200      GET      117l      685w     4689c http://10.10.10.68/css/sm-clean.css
+200      GET      161l      397w     7743c http://10.10.10.68/index.html
+200      GET      680l     1154w    10723c http://10.10.10.68/css/common.css
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://10.10.10.68/css/ (Apache)
+200      GET        3l      206w    24476c http://10.10.10.68/js/jquery.smartmenus.min.js
+200      GET       38l       76w      909c http://10.10.10.68/js/custom_google_map_style.js
+200      GET      118l      550w    60153c http://10.10.10.68/js/jquery.nicescroll.min.js
+200      GET      161l      397w     7743c http://10.10.10.68/
+404      GET        9l       34w      297c http://10.10.10.68/Documents%20and%20Settings
+200     POST      161l      397w     7743c http://10.10.10.68/
+404     POST        9l       34w      297c http://10.10.10.68/Documents%20and%20Settings
+404      PUT        9l       32w      284c http://10.10.10.68/admin.php
+301      GET        9l       28w      308c http://10.10.10.68/css => http://10.10.10.68/css/
+301      PUT        9l       28w      308c http://10.10.10.68/css => http://10.10.10.68/css/
+301     POST        9l       28w      308c http://10.10.10.68/css => http://10.10.10.68/css/
+301      GET        9l       28w      308c http://10.10.10.68/dev => http://10.10.10.68/dev/
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://10.10.10.68/dev (Apache)
+301      PUT        9l       28w      308c http://10.10.10.68/dev => http://10.10.10.68/dev/
+301     POST        9l       28w      308c http://10.10.10.68/dev => http://10.10.10.68/dev/
+200      GET        1l      255w     4559c http://10.10.10.68/dev/phpbash.min.php
+200      GET      216l      489w     8151c http://10.10.10.68/dev/phpbash.php
+301      GET        9l       28w      310c http://10.10.10.68/fonts => http://10.10.10.68/fonts/
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://10.10.10.68/fonts (Apache)
+301      PUT        9l       28w      310c http://10.10.10.68/fonts => http://10.10.10.68/fonts/
+301     POST        9l       28w      310c http://10.10.10.68/fonts => http://10.10.10.68/fonts/
+200      GET      390l     2094w   135959c http://10.10.10.68/fonts/fontawesome-webfont.eot
+200      GET      260l     1635w   130134c http://10.10.10.68/fonts/fontawesome-webfont.woff2
+200      GET      310l     2069w   163622c http://10.10.10.68/fonts/fontawesome-webfont.woff
+200      GET     2588l     4636w   239531c http://10.10.10.68/fonts/FontAwesome.otf
+200      GET     1304l     5478w   196149c http://10.10.10.68/fonts/fontawesome-webfont.ttf
+301      GET        9l       28w      311c http://10.10.10.68/images => http://10.10.10.68/images/
+200      GET      685l    57230w   391622c http://10.10.10.68/fonts/fontawesome-webfont.svg
+301      PUT        9l       28w      311c http://10.10.10.68/images => http://10.10.10.68/images/
+301     POST        9l       28w      311c http://10.10.10.68/images => http://10.10.10.68/images/
+404      PUT        9l       32w      284c http://10.10.10.68/index.php
+404      PUT        9l       32w      283c http://10.10.10.68/info.php
+200     POST      161l      397w     7743c http://10.10.10.68/index.html
+301      GET        9l       28w      307c http://10.10.10.68/js => http://10.10.10.68/js/
+301      PUT        9l       28w      307c http://10.10.10.68/js => http://10.10.10.68/js/
+301     POST        9l       28w      307c http://10.10.10.68/js => http://10.10.10.68/js/
+301      GET        9l       28w      308c http://10.10.10.68/php => http://10.10.10.68/php/
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://10.10.10.68/php (Apache)
+301      PUT        9l       28w      308c http://10.10.10.68/php => http://10.10.10.68/php/
+200      GET        0l        0w        0c http://10.10.10.68/php/sendMail.php
+301     POST        9l       28w      308c http://10.10.10.68/php => http://10.10.10.68/php/
+404      GET        9l       33w      287c http://10.10.10.68/reports%20list
+404     POST        9l       33w      287c http://10.10.10.68/reports%20list
+301      GET        9l       28w      312c http://10.10.10.68/uploads => http://10.10.10.68/uploads/
+301      PUT        9l       28w      312c http://10.10.10.68/uploads => http://10.10.10.68/uploads/
+301     POST        9l       28w      312c http://10.10.10.68/uploads => http://10.10.10.68/uploads/
+404      PUT        9l       32w      292c http://10.10.10.68/uploads/admin.php
+200      GET        1l        1w       14c http://10.10.10.68/uploads/index.html
+404      PUT        9l       32w      291c http://10.10.10.68/uploads/info.php
+200     POST        1l        1w       14c http://10.10.10.68/uploads/index.html
+404      PUT        9l       32w      294c http://10.10.10.68/uploads/phpinfo.php
+404      PUT        9l       32w      300c http://10.10.10.68/uploads/xmlrpc_server.php

