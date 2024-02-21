@@ -1,0 +1,23 @@
+# Dirsearch started Tue Feb 20 23:04:01 2024 as: dirsearch.py -u 10.10.10.75
+
+403   297B   http://10.10.10.75:80/.ht_wsr.txt
+403   300B   http://10.10.10.75:80/.htaccess.bak1
+403   300B   http://10.10.10.75:80/.htaccess.orig
+403   300B   http://10.10.10.75:80/.htaccess.save
+403   302B   http://10.10.10.75:80/.htaccess.sample
+403   298B   http://10.10.10.75:80/.htaccess_sc
+403   300B   http://10.10.10.75:80/.htaccess_orig
+403   301B   http://10.10.10.75:80/.htaccess_extra
+403   298B   http://10.10.10.75:80/.htaccessOLD
+403   298B   http://10.10.10.75:80/.htaccessBAK
+403   299B   http://10.10.10.75:80/.htaccessOLD2
+403   290B   http://10.10.10.75:80/.htm
+403   291B   http://10.10.10.75:80/.html
+403   296B   http://10.10.10.75:80/.htpasswds
+403   300B   http://10.10.10.75:80/.htpasswd_test
+403   297B   http://10.10.10.75:80/.httr-oauth
+403   290B   http://10.10.10.75:80/.php
+403   291B   http://10.10.10.75:80/.php3
+200    93B   http://10.10.10.75:80/index.html
+403   299B   http://10.10.10.75:80/server-status
+403   300B   http://10.10.10.75:80/server-status/
