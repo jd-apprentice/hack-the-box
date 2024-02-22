@@ -121,7 +121,20 @@ https://robertholdsworthsecurity.medium.com/how-to-crack-an-ssh-private-key-pass
 ssh -i id_rsa david@<IP>
 ```
 
+Root FLAG
+----
+
+With linpeas I found the following file which contains a bin which is being called with sudo
+
+```
+You own the script: /home/david/bin/server-stats.sh                                                                                                                                 
+/usr/bin/gettext.sh 
+```
+
+So what we have to do is call it but without the `usr/bin/cat` and since is journalctl is going to open a `less` by default were we can use `https://gtfobins.github.io/gtfobins/journalctl/` to get root
+
 ### Links used
+- https://gtfobins.github.io/gtfobins/journalctl/
 - https://robertholdsworthsecurity.medium.com/how-to-crack-an-ssh-private-key-passphrase-ab7dd1583178
 - https://nvd.nist.gov/vuln/detail/CVE-2019-16278
 - https://nvd.nist.gov/vuln/detail/CVE-2021-3156
