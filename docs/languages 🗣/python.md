@@ -1,5 +1,7 @@
 # Python
 
+We can use Python for a variety of tasks, including:
+
 ## Start a web server
 
 ```bash

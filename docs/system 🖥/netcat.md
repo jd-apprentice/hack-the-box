@@ -1,5 +1,7 @@
 # Netcat
 
+Netcat is a simple Unix utility which reads and writes data across network connections, using the TCP/IP protocol.
+
 ## Listen on a port
 
 ```bash

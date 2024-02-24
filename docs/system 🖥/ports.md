@@ -1,5 +1,7 @@
 # Ports
 
+Related to ports and how to interact with them.
+
 ## Check open ports
 
 ```bash
@@ -9,7 +11,7 @@ netstat -tunl
 
 ## Port forwarding
 
-https://phoenixnap.com/kb/ssh-port-forwarding
+[read](https://phoenixnap.com/kb/ssh-port-forwarding)
 
 ```bash
 ssh -L <LOCAL_PORT>:<REMOTE_HOST>:<REMOTE_PORT> <USER>@<GATEWAY>

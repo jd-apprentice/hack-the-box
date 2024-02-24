@@ -2,7 +2,7 @@
 
 ## Feroxbuster
 
-https://github.com/epi052/feroxbuster
+[feroxbuster](https://github.com/epi052/feroxbuster)
 
 ```bash
 `feroxbuster --insecure -u http://10.10.10.75/nibbleblog -o ferox -w ~/Documents/Security/wordlists/php.txt`
@@ -15,7 +15,7 @@ https://github.com/epi052/feroxbuster
 
 ## Dirsearch
 
-https://github.com/maurosoria/dirsearch
+[dirsearch](https://github.com/maurosoria/dirsearch)
 
 ```bash
 dirsearch -u 40.121.87.195:60000 -w ~/Documents/Security/wordlists/raft-medium-directories.txt -t 100

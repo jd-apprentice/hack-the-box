@@ -1,4 +1,8 @@
-## Usage of NMAP
+# Nmap
+
+Nmap is a network scanner that can be used to discover hosts and services on a computer network.
+
+## Usage
 
 ```shell
 nmap -p- -T4 <IP> -oA fullport --min-rate 5000
@@ -61,4 +65,4 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 ### Cheatsheet
 
-- https://www.stationx.net/nmap-cheat-sheet/
+[stationx](https://www.stationx.net/nmap-cheat-sheet/)

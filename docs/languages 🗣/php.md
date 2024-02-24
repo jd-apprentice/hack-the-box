@@ -1,8 +1,10 @@
 # PHP
 
+Common exploits in PHP.
+
 ## Cookies
 
-PHPSESSID
+`PHPSESSID` is the default session cookie name.
 
 ## Web shell
 
