@@ -1,0 +1,11 @@
+# Nmap 7.80 scan initiated Sun Feb 25 14:22:49 2024 as: nmap -T4 --min-rate 5000 -sV -o all -Pn 10.10.11.100
+Nmap scan report for 10.10.11.100 (10.10.11.100)
+Host is up (0.25s latency).
+Not shown: 803 closed ports, 195 filtered ports
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.2 (Ubuntu Linux; protocol 2.0)
+80/tcp open  http    Apache httpd 2.4.41 ((Ubuntu))
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Feb 25 14:23:02 2024 -- 1 IP address (1 host up) scanned in 12.77 seconds

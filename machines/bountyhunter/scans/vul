@@ -1,0 +1,47 @@
+# Nmap 7.80 scan initiated Sun Feb 25 14:53:53 2024 as: nmap --script vuln -o vul 10.10.11.100
+Pre-scan script results:
+| broadcast-avahi-dos: 
+|   Discovered hosts:
+|     224.0.0.251
+|   After NULL UDP avahi packet DoS (CVE-2011-1002).
+|_  Hosts are all up (not vulnerable).
+Nmap scan report for 10.10.11.100 (10.10.11.100)
+Host is up (0.25s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE
+22/tcp open  ssh
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+80/tcp open  http
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+| http-fileupload-exploiter: 
+|   
+|     Couldn't find a file-type field.
+|   
+|     Couldn't find a file-type field.
+|   
+|     Couldn't find a file-type field.
+|   
+|     Couldn't find a file-type field.
+|   
+|_    Couldn't find a file-type field.
+|_http-internal-ip-disclosure: ERROR: Script execution failed (use -d to debug)
+| http-sql-injection: 
+|   Possible sqli for queries:
+|     http://10.10.11.100:80/resources/?C=S%3bO%3dA%27%20OR%20sqlspider
+|     http://10.10.11.100:80/resources/?C=M%3bO%3dA%27%20OR%20sqlspider
+|     http://10.10.11.100:80/resources/?C=N%3bO%3dD%27%20OR%20sqlspider
+|     http://10.10.11.100:80/resources/?C=D%3bO%3dA%27%20OR%20sqlspider
+|     http://10.10.11.100:80/resources/?C=D%3bO%3dA%27%20OR%20sqlspider
+|     http://10.10.11.100:80/resources/?C=M%3bO%3dA%27%20OR%20sqlspider
+|     http://10.10.11.100:80/resources/?C=S%3bO%3dD%27%20OR%20sqlspider
+|     http://10.10.11.100:80/resources/?C=N%3bO%3dA%27%20OR%20sqlspider
+|     http://10.10.11.100:80/resources/?C=M%3bO%3dD%27%20OR%20sqlspider
+|     http://10.10.11.100:80/resources/?C=D%3bO%3dA%27%20OR%20sqlspider
+|     http://10.10.11.100:80/resources/?C=S%3bO%3dA%27%20OR%20sqlspider
+|_    http://10.10.11.100:80/resources/?C=N%3bO%3dA%27%20OR%20sqlspider
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-vuln-cve2017-1001000: ERROR: Script execution failed (use -d to debug)
+
+# Nmap done at Sun Feb 25 14:56:13 2024 -- 1 IP address (1 host up) scanned in 140.01 seconds
