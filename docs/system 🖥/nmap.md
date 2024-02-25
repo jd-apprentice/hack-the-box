@@ -23,6 +23,12 @@ nmap --script dns-brute <IP>
 
 - `dns-brute` : Brute force subdomains
 
+## Vulnerability scanning
+
+```shell
+nmap --script vuln -o vul <IP>
+```
+
 ## Location of NMAP scripts
 
 ```shell

@@ -19,3 +19,7 @@ webcopilot -d <DOMAIN>
 ```bash
 nmap --script dns-brute <DOMAIN>
 ```
+
+### Others
+
+- [altdns](https://github.com/infosec-au/altdns)

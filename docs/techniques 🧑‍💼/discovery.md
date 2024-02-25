@@ -1,5 +1,7 @@
 # Discovery
 
+Discovery is the process of finding information about a target. This can include finding open ports, services, and directories.
+
 ## Feroxbuster
 
 [feroxbuster](https://github.com/epi052/feroxbuster)
@@ -24,3 +26,12 @@ dirsearch -u 40.121.87.195:60000 -w ~/Documents/Security/wordlists/raft-medium-d
 - `-u` : URL to scan
 - `-w` : Wordlist to use
 - `-t` : Number of threads
+
+## Amass
+
+[amass](https://github.com/owasp-amass/amass)
+
+## Cheatsheet
+
+[art-of-subdomain-enumeration](https://github.com/appsecco/the-art-of-subdomain-enumeration)
+[pentester.land](https://pentester.land/blog/subdomains-enumeration-cheatsheet/)
