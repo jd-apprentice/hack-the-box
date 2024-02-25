@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+    paths:
+      - "docs/**"
+      - ".github/workflows/ci.yml"
 
 permissions:
   contents: write
