@@ -16,6 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - run: echo "pentest.jonathan.com.ar" > CNAME
       - name: Configure Git Credentials
         run: |
           git config user.name github-actions[bot]
@@ -24,7 +25,6 @@ jobs:
         with:
           python-version: 3.x
       - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
-      - run: echo "pentest.jonathan.com.ar" > CNAME
       - uses: actions/cache@v3
         with:
           key: mkdocs-material-${{ env.cache_id }}
@@ -32,4 +32,4 @@ jobs:
           restore-keys: |
             mkdocs-material-
       - run: pip install mkdocs-material
-      - run: mkdocs gh-deploy --force
+      - run: mkdocs gh-deploy
