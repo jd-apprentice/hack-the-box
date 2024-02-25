@@ -13,7 +13,7 @@ cat /etc/crontab
 ## Enumeration
 
 ```bash
-
+ps aux #List running processes
 id || (whoami && groups) 2>/dev/null #Info about me
 cat /etc/passwd | cut -d: -f1 #List all users
 cat /etc/passwd | grep "sh$" #List users with console
