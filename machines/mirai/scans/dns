@@ -1,0 +1,13 @@
+# Nmap 7.80 scan initiated Mon Feb 26 21:52:56 2024 as: nmap --script dns-brute -o dns 10.10.10.48
+Nmap scan report for 10.10.10.48 (10.10.10.48)
+Host is up (0.25s latency).
+Not shown: 997 closed ports
+PORT   STATE SERVICE
+22/tcp open  ssh
+53/tcp open  domain
+80/tcp open  http
+
+Host script results:
+|_dns-brute: Can't guess domain of "10.10.10.48"; use dns-brute.domain script argument.
+
+# Nmap done at Mon Feb 26 21:53:25 2024 -- 1 IP address (1 host up) scanned in 29.39 seconds

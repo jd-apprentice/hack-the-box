@@ -1,0 +1,9 @@
+200      GET        1l        1w       13c http://10.10.10.48/versions
+200      GET        1l       10w       61c http://10.10.10.48/.js
+200      GET        1l       10w       61c http://10.10.10.48/.js/.js
+200      GET        1l       10w       61c http://10.10.10.48/.js/.js/.js
+200      GET        1l       10w       61c http://10.10.10.48/.js/.js/.js/.js
+200      GET        1l        1w       13c http://10.10.10.48/versions
+200      GET        1l       10w       61c http://10.10.10.48/versions/.js
+200      GET        1l       10w       61c http://10.10.10.48/versions/.js/.js
+200      GET        1l       10w       61c http://10.10.10.48/versions/.js/.js/.js
