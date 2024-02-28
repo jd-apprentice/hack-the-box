@@ -1,0 +1,7 @@
+200      GET       25l       69w      612c http://10.129.164.210/
+405     POST        7l       12w      173c http://10.129.164.210/
+405      PUT        7l       12w      173c http://10.129.164.210/
+200      GET      384l      774w    29679c http://10.129.164.210/w3.css
+200      GET       31l       66w      999c http://10.129.164.210/admin.php
+200     POST       31l       66w      999c http://10.129.164.210/admin.php
+200      PUT       31l       66w      999c http://10.129.164.210/admin.php

@@ -1,0 +1,13 @@
+# Nmap 7.80 scan initiated Wed Feb 28 01:20:05 2024 as: nmap -T4 --min-rate 5000 -sV -o all 10.129.164.210
+Nmap scan report for 10.129.164.210 (10.129.164.210)
+Host is up (0.20s latency).
+Not shown: 995 closed ports
+PORT      STATE    SERVICE      VERSION
+80/tcp    open     http         nginx 1.14.2
+1031/tcp  filtered iad2
+3689/tcp  filtered rendezvous
+8090/tcp  filtered opsmessaging
+20005/tcp filtered btx
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Feb 28 01:20:15 2024 -- 1 IP address (1 host up) scanned in 9.12 seconds
