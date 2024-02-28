@@ -1,0 +1,22 @@
+# Nmap 7.80 scan initiated Wed Feb 28 01:56:49 2024 as: nmap -p- -T4 --min-rate 5000 -sV -o all 10.129.136.195
+Nmap scan report for 10.129.136.195 (10.129.136.195)
+Host is up (0.20s latency).
+Not shown: 65521 closed ports
+PORT      STATE    SERVICE     VERSION
+873/tcp   open     rsync       (protocol version 31)
+2785/tcp  filtered aic-np
+4912/tcp  filtered lutap
+5968/tcp  filtered mppolicy-v5
+8872/tcp  filtered unknown
+11821/tcp filtered unknown
+22106/tcp filtered unknown
+26466/tcp filtered unknown
+31844/tcp filtered unknown
+33641/tcp filtered unknown
+46784/tcp filtered unknown
+51568/tcp filtered unknown
+63108/tcp filtered unknown
+64836/tcp filtered unknown
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Feb 28 01:57:13 2024 -- 1 IP address (1 host up) scanned in 24.94 seconds
