@@ -1,0 +1,25 @@
+# Nmap 7.80 scan initiated Wed Feb 28 02:19:10 2024 as: nmap -p 3389 -T4 --min-rate 5000 -sV -A -o ms-wbt 10.129.113.242
+Nmap scan report for 10.129.113.242 (10.129.113.242)
+Host is up (0.20s latency).
+
+PORT     STATE SERVICE       VERSION
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+| rdp-ntlm-info: 
+|   Target_Name: EXPLOSION
+|   NetBIOS_Domain_Name: EXPLOSION
+|   NetBIOS_Computer_Name: EXPLOSION
+|   DNS_Domain_Name: Explosion
+|   DNS_Computer_Name: Explosion
+|   Product_Version: 10.0.17763
+|_  System_Time: 2024-02-28T05:19:18+00:00
+| ssl-cert: Subject: commonName=Explosion
+| Not valid before: 2024-02-27T05:13:20
+|_Not valid after:  2024-08-28T05:13:20
+|_ssl-date: 2024-02-28T05:19:21+00:00; -1s from scanner time.
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: -1s, deviation: 0s, median: -1s
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Feb 28 02:19:22 2024 -- 1 IP address (1 host up) scanned in 11.30 seconds

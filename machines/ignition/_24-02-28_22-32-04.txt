@@ -1,0 +1,13 @@
+# Dirsearch started Wed Feb 28 22:32:24 2024 as: dirsearch.py -r -u http://ignition.htb -m GET -w /home/dyallo/Documents/Security/wordlists/common.txt
+
+200    25KB  http://ignition.htb:80/0
+301     0B   http://ignition.htb:80/Home    -> REDIRECTS TO: http://ignition.htb/home
+200     7KB  http://ignition.htb:80/admin
+302     0B   http://ignition.htb:80/catalog    -> REDIRECTS TO: http://ignition.htb/
+302     0B   http://ignition.htb:80/checkout    -> REDIRECTS TO: http://ignition.htb/checkout/cart/
+200    25KB  http://ignition.htb:80/cms
+200    28KB  http://ignition.htb:80/contact
+200    27KB  http://ignition.htb:80/enable-cookies
+301   185B   http://ignition.htb:80/errors    -> REDIRECTS TO: http://ignition.htb/errors/
+200    25KB  http://ignition.htb:80/home
+200    25KB  http://ignition.htb:80/index.php
