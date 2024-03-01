@@ -1,0 +1,13 @@
+# Nmap 7.80 scan initiated Thu Feb 29 19:51:35 2024 as: nmap --script dns-brute -o dns 10.10.11.194
+Nmap scan report for 10.10.11.194 (10.10.11.194)
+Host is up (0.26s latency).
+Not shown: 997 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+9091/tcp open  xmltec-xmlmail
+
+Host script results:
+|_dns-brute: Can't guess domain of "10.10.11.194"; use dns-brute.domain script argument.
+
+# Nmap done at Thu Feb 29 19:51:55 2024 -- 1 IP address (1 host up) scanned in 19.48 seconds

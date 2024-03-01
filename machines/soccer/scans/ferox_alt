@@ -1,0 +1,27 @@
+301      GET       10l       16w      171c http://soc-player.soccer.htb/js => http://soc-player.soccer.htb/js/
+301      GET       10l       16w      173c http://soc-player.soccer.htb/css => http://soc-player.soccer.htb/css/
+301      GET       10l       16w      173c http://soc-player.soccer.htb/img => http://soc-player.soccer.htb/img/
+302      GET        1l        4w       23c http://soc-player.soccer.htb/logout => http://soc-player.soccer.htb/
+200      GET       98l      216w     3307c http://soc-player.soccer.htb/login
+200      GET      104l      229w     3741c http://soc-player.soccer.htb/signup
+200      GET      403l      706w    10078c http://soc-player.soccer.htb/match
+200      GET       98l      216w     3307c http://soc-player.soccer.htb/Login
+200      GET        7l     1223w    80496c http://soc-player.soccer.htb/js/bootstrap.bundle.min.js
+200      GET      494l     1440w    96128c http://soc-player.soccer.htb/img/ground3.jpg
+200      GET        2l     1294w    89501c http://soc-player.soccer.htb/js/jquery.min.js
+200      GET     2232l     4070w   223875c http://soc-player.soccer.htb/img/ground4.jpg
+200      GET        7l     1608w   140930c http://soc-player.soccer.htb/css/bootstrap.min.css
+200      GET      711l     4253w   403502c http://soc-player.soccer.htb/img/ground2.jpg
+200      GET      809l     5093w   490253c http://soc-player.soccer.htb/img/ground1.jpg
+200      GET      157l      535w     6749c http://soc-player.soccer.htb/
+200      GET     1307l     7814w   695864c http://soc-player.soccer.htb/img/football.jpg
+200      GET        1l        6w       31c http://soc-player.soccer.htb/check
+200      GET      335l     1999w   161545c http://soc-player.soccer.htb/img/nepal.jpg
+200      GET      422l     2279w   180268c http://soc-player.soccer.htb/img/spain.png
+200      GET      511l     3123w   235985c http://soc-player.soccer.htb/img/afgha.jpg
+200      GET      480l     2688w   240674c http://soc-player.soccer.htb/img/sweden.jpg
+302      GET        1l        4w       23c http://soc-player.soccer.htb/Logout => http://soc-player.soccer.htb/
+200      GET      104l      229w     3741c http://soc-player.soccer.htb/Signup
+200      GET      104l      229w     3741c http://soc-player.soccer.htb/SignUp
+200      GET        1l        6w       31c http://soc-player.soccer.htb/Check
+200      GET       98l      216w     3307c http://soc-player.soccer.htb/LOGIN
