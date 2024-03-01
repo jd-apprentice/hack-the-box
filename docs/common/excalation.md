@@ -31,6 +31,7 @@ date 2>/dev/null #Date
 (df -h || lsblk) #System stats
 lscpu #CPU info
 lpstat -a 2>/dev/null #Printers info
+ls -al /etc/nginx/sites-enabled #Nginx sites
 ```
 
 If stuck, check the [Privilege Escalation](https://book.hacktricks.xyz/linux-hardening/privilege-escalation) section of HackTricks.
