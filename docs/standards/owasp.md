@@ -26,4 +26,6 @@ Now since this is running bash, we can try to add a `;` at the end of the `local
 
 We got confirmation that we are executing commands, now instead of `id` i'm going to find the flag with this command `localhost; ls / | grep -i "flag"`
 
-There we got the flag! Now we can do `localhost; cat <name>` to see the content of the file.
+At this point we should find a file called `flag_xxx`
+
+Now we can do `localhost; cat <name>` to see the content of the file.

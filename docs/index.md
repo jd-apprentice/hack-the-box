@@ -1,7 +1,5 @@
 # Home 🏠
 
-This is my space to share my knowledge and experiences in the world of cybersecurity. I hope you find it useful and interesting.
-
 ## About me
 
 ![img](https://avatars.githubusercontent.com/u/68082746?v=4)
