@@ -1,0 +1,32 @@
+---
+- name: Discover hidden folders
+  hosts: localhost
+  gather_facts: false
+  vars_prompt:
+    - name: "ip_address"
+      private: false
+      prompt: "Enter the IP address to scan"
+
+    - name: "methods"
+      private: false
+      prompt: "Enter the HTTP methods to use (GET, PUT, POST, etc.)"
+      default: "GET"
+
+    - name: "wordlist"
+      private: false
+      prompt: "Enter the wordlist to use"
+      default: "common"
+
+  tasks:
+    - name: run feroxbuster
+      ansible.builtin.shell: |
+        feroxbuster --insecure -u http://{{ ip_address }} -o output/ferox -m {{ methods }} -w ~/Documents/Security/wordlists/{{ wordlist }}.txt
+
+    - name: run dirsearch
+      ansible.builtin.shell: |
+        dirsearch -r -u http://{{ ip_address }} -m {{ methods }} -w ~/Documents/Security/wordlists/{{ wordlist }}.txt
+        mv ~/dirsearch/reports/{{ ip_address }}*.txt output/dirsearch.txt
+
+    - name: run wfuzz
+      ansible.builtin.shell: |
+        wfuzz -c -w ~/Documents/Security/wordlists/{{ wordlist }}.txt -R1 --hc 404 http://{{ ip_address }}/FUZZ

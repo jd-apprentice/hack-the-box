@@ -1,0 +1,21 @@
+---
+- name: Gather ports open with nmap
+  hosts: localhost
+  gather_facts: false
+  vars_prompt:
+    - name: "ip_address"
+      private: false
+      prompt: "Enter the IP address to scan"
+
+  tasks:
+    - name: run nmap
+      ansible.builtin.shell: |
+        nmap -p- -T4 --min-rate 5000 -A -sV -vvv -o out/all {{ ip_address }}
+
+    - name: run vuln nmap
+      ansible.builtin.shell: |
+        nmap --script vuln -T4 --min-rate 5000 -vvv -o out/vuln {{ ip_address }}
+
+    - name: run dns-brute nmap
+      ansible.builtin.shell: |
+        nmap --script dns-brute -T4 --min-rate 5000 -vvv -o out/dns {{ ip_address }}
