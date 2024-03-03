@@ -15,6 +15,14 @@ hashcat -m <MODE> <HASH> <WORDLIST>
 hashcat -m 22931 ../wordlists/users/ssh_david.txt ../wordlists/rockyou.txt
 ```
 
+### Mash attack
+
+When we know the password length or the password pattern
+
+```bash
+hashcat -a 3 -m 1400 <HASH> <PASSWORD><MASK> # https://hashcat.net/wiki/doku.php?id=mask_attack
+```
+
 ## SSH
 
 [read](https://robertholdsworthsecurity.medium.com/how-to-crack-an-ssh-private-key-passphrase-ab7dd1583178)
@@ -29,4 +37,14 @@ john --wordlist=/usr/share/wordlists/rockyou.txt id_rsa.hash
 ```bash
 sudo apt install fcrackzip
 fcrackzip -u -D -p rockyou.txt <FILE>
+```
+
+## Find strings
+
+We can use `strings` to find strings in a file
+
+It can be a database, a binary, a .exe, a disk, etc.
+
+```bash
+strings <FILE>
 ```
