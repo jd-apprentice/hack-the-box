@@ -9,3 +9,6 @@ machine:
 
 playbook:
 	ansible-playbook -i ansible/inventory/$(inventory).conf ansible/playbooks/$(playbook).yml
+
+compile:
+	shc -f scripts/$(script).sh -o $(script)
