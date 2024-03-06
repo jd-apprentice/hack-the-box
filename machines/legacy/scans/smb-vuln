@@ -1,0 +1,20 @@
+# Nmap 7.80 scan initiated Wed Mar  6 01:21:14 2024 as: nmap --script smb-vuln* -p 445 -o scans/smb-vuln 10.10.10.4
+Nmap scan report for 10.10.10.4 (10.10.10.4)
+Host is up (0.25s latency).
+
+PORT    STATE SERVICE
+445/tcp open  microsoft-ds
+|_smb-vuln-webexec: ERROR: Script execution failed (use -d to debug)
+
+Host script results:
+|_smb-vuln-conficker: ERROR: Script execution failed (use -d to debug)
+|_smb-vuln-cve-2017-7494: ERROR: Script execution failed (use -d to debug)
+|_smb-vuln-ms06-025: ERROR: Script execution failed (use -d to debug)
+|_smb-vuln-ms07-029: ERROR: Script execution failed (use -d to debug)
+|_smb-vuln-ms08-067: ERROR: Script execution failed (use -d to debug)
+|_smb-vuln-ms10-054: false
+|_smb-vuln-ms10-061: ERROR: Script execution failed (use -d to debug)
+|_smb-vuln-ms17-010: ERROR: Script execution failed (use -d to debug)
+|_smb-vuln-regsvc-dos: ERROR: Script execution failed (use -d to debug)
+
+# Nmap done at Wed Mar  6 01:21:20 2024 -- 1 IP address (1 host up) scanned in 6.33 seconds
