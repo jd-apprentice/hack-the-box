@@ -1,0 +1,104 @@
+# Dirsearch started Thu Mar  7 19:58:43 2024 as: dirsearch.py -r -u http://popcorn.htb/ -m GET PUT POST -w /home/dyallo/Documents/Security/wordlists/common.txt
+
+403   287B   http://popcorn.htb:80/cgi-bin/
+200   177B   http://popcorn.htb:80/index
+200   177B   http://popcorn.htb:80/index.html
+301   312B   http://popcorn.htb:80/torrent    -> REDIRECTS TO: http://popcorn.htb/torrent/
+200    47KB  http://popcorn.htb:80/test
+301   318B   http://popcorn.htb:80/torrent/admin    -> REDIRECTS TO: http://popcorn.htb/torrent/admin/
+200     9KB  http://popcorn.htb:80/torrent/browse
+200   936B   http://popcorn.htb:80/torrent/comment
+200     0B   http://popcorn.htb:80/torrent/config
+301   316B   http://popcorn.htb:80/torrent/css    -> REDIRECTS TO: http://popcorn.htb/torrent/css/
+301   321B   http://popcorn.htb:80/torrent/database    -> REDIRECTS TO: http://popcorn.htb/torrent/database/
+200     0B   http://popcorn.htb:80/torrent/download
+200     0B   http://popcorn.htb:80/torrent/edit
+301   319B   http://popcorn.htb:80/torrent/health    -> REDIRECTS TO: http://popcorn.htb/torrent/health/
+200     4KB  http://popcorn.htb:80/torrent/hide
+301   319B   http://popcorn.htb:80/torrent/images    -> REDIRECTS TO: http://popcorn.htb/torrent/images/
+200    11KB  http://popcorn.htb:80/torrent/index
+200    11KB  http://popcorn.htb:80/torrent/index.php
+301   315B   http://popcorn.htb:80/torrent/js    -> REDIRECTS TO: http://popcorn.htb/torrent/js/
+301   316B   http://popcorn.htb:80/torrent/lib    -> REDIRECTS TO: http://popcorn.htb/torrent/lib/
+200   183B   http://popcorn.htb:80/torrent/logout
+200     8KB  http://popcorn.htb:80/torrent/login
+200    27KB  http://popcorn.htb:80/torrent/preview
+301   319B   http://popcorn.htb:80/torrent/readme    -> REDIRECTS TO: http://popcorn.htb/torrent/readme/
+200   968B   http://popcorn.htb:80/torrent/rss
+200     4B   http://popcorn.htb:80/torrent/secure
+200   321B   http://popcorn.htb:80/torrent/stylesheet
+301   322B   http://popcorn.htb:80/torrent/templates    -> REDIRECTS TO: http://popcorn.htb/torrent/templates/
+200     2KB  http://popcorn.htb:80/torrent/thumbnail
+301   321B   http://popcorn.htb:80/torrent/torrents    -> REDIRECTS TO: http://popcorn.htb/torrent/torrents/
+301   319B   http://popcorn.htb:80/torrent/upload    -> REDIRECTS TO: http://popcorn.htb/torrent/upload/
+200     0B   http://popcorn.htb:80/torrent/upload_file
+301   318B   http://popcorn.htb:80/torrent/users    -> REDIRECTS TO: http://popcorn.htb/torrent/users/
+200     3KB  http://popcorn.htb:80/torrent/admin/admin
+200     3KB  http://popcorn.htb:80/torrent/admin/admin.php
+301   325B   http://popcorn.htb:80/torrent/admin/images    -> REDIRECTS TO: http://popcorn.htb/torrent/admin/images/
+200    81B   http://popcorn.htb:80/torrent/admin/index
+200    81B   http://popcorn.htb:80/torrent/admin/index.php
+301   328B   http://popcorn.htb:80/torrent/admin/templates    -> REDIRECTS TO: http://popcorn.htb/torrent/admin/templates/
+200    81B   http://popcorn.htb:80/torrent/admin/users
+200     2KB  http://popcorn.htb:80/torrent/css/lightbox
+200   106B   http://popcorn.htb:80/torrent/health/1
+200   118B   http://popcorn.htb:80/torrent/health/3
+200   125B   http://popcorn.htb:80/torrent/health/5
+200   120B   http://popcorn.htb:80/torrent/health/4
+200   112B   http://popcorn.htb:80/torrent/health/2
+200    32KB  http://popcorn.htb:80/torrent/images/admin
+200     1KB  http://popcorn.htb:80/torrent/images/back
+200    81B   http://popcorn.htb:80/torrent/images/background
+200    43B   http://popcorn.htb:80/torrent/images/blank
+200    19KB  http://popcorn.htb:80/torrent/images/banner
+200    30KB  http://popcorn.htb:80/torrent/images/button
+200   222B   http://popcorn.htb:80/torrent/images/close
+200   925B   http://popcorn.htb:80/torrent/images/details
+200     1KB  http://popcorn.htb:80/torrent/images/download
+200     3KB  http://popcorn.htb:80/torrent/images/edit
+200   917B   http://popcorn.htb:80/torrent/images/feed
+200   969B   http://popcorn.htb:80/torrent/images/folder
+200     3KB  http://popcorn.htb:80/torrent/images/loading
+200     5KB  http://popcorn.htb:80/torrent/images/logo
+200    31KB  http://popcorn.htb:80/torrent/images/login
+200    32KB  http://popcorn.htb:80/torrent/images/logout
+200    51B   http://popcorn.htb:80/torrent/images/reg
+200    33KB  http://popcorn.htb:80/torrent/images/register
+200     1KB  http://popcorn.htb:80/torrent/images/search
+200    13KB  http://popcorn.htb:80/torrent/images/stats
+200     1KB  http://popcorn.htb:80/torrent/images/th
+200    20KB  http://popcorn.htb:80/torrent/js/lightbox
+200    12KB  http://popcorn.htb:80/torrent/readme/license
+200     3KB  http://popcorn.htb:80/torrent/readme/readme
+200   850B   http://popcorn.htb:80/torrent/templates/about
+200   247B   http://popcorn.htb:80/torrent/templates/directory
+301   328B   http://popcorn.htb:80/torrent/templates/email    -> REDIRECTS TO: http://popcorn.htb/torrent/templates/email/
+200     4KB  http://popcorn.htb:80/torrent/templates/faq
+302     0B   http://popcorn.htb:80/torrent/templates/footer    -> REDIRECTS TO: /index.php
+200   120B   http://popcorn.htb:80/torrent/templates/hack
+200   143B   http://popcorn.htb:80/torrent/templates/header
+200     5KB  http://popcorn.htb:80/torrent/templates/layout
+302     0B   http://popcorn.htb:80/torrent/templates/modify    -> REDIRECTS TO: ../../index.php
+200   144B   http://popcorn.htb:80/torrent/templates/news
+200   143B   http://popcorn.htb:80/torrent/templates/stats
+200     0B   http://popcorn.htb:80/torrent/torrents/index
+200     0B   http://popcorn.htb:80/torrent/torrents/index.php
+200    81B   http://popcorn.htb:80/torrent/users/change_password
+200     8KB  http://popcorn.htb:80/torrent/users/forgot_password
+200   701B   http://popcorn.htb:80/torrent/users/img
+200    81B   http://popcorn.htb:80/torrent/users/index
+200    81B   http://popcorn.htb:80/torrent/users/index.php
+200     8KB  http://popcorn.htb:80/torrent/users/registration
+301   328B   http://popcorn.htb:80/torrent/users/templates    -> REDIRECTS TO: http://popcorn.htb/torrent/users/templates/
+200     2KB  http://popcorn.htb:80/torrent/admin/images/browse
+200     2KB  http://popcorn.htb:80/torrent/admin/images/comments
+200     2KB  http://popcorn.htb:80/torrent/admin/images/hack
+200     2KB  http://popcorn.htb:80/torrent/admin/images/logout
+200     2KB  http://popcorn.htb:80/torrent/admin/images/users
+200   779B   http://popcorn.htb:80/torrent/admin/templates/admin
+200   779B   http://popcorn.htb:80/torrent/admin/templates/admin.php
+302     0B   http://popcorn.htb:80/torrent/admin/templates/footer    -> REDIRECTS TO: /index.php
+200   149B   http://popcorn.htb:80/torrent/admin/templates/header
+200   604B   http://popcorn.htb:80/torrent/admin/templates/list_users
+302     0B   http://popcorn.htb:80/torrent/admin/templates/modify    -> REDIRECTS TO: ../../index.php
+200   281B   http://popcorn.htb:80/torrent/admin/templates/news

