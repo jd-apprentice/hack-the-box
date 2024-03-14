@@ -1,2 +1,4 @@
 scripts/*.py
 out/
+venv
+node_modules
