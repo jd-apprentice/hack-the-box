@@ -10,6 +10,10 @@ Fuzzing is a technique used to find vulnerabilities in software by providing une
 wfuzz --hw=153 -c -t 200 -w ~/Documents/Security/wordlists/common.txt http://40.121.87.195:60004/\?file\=..//FUZZ.txt
 ```
 
+```bash
+wfuzz -c --hh=3245 -w ~/Documents/Security/wordlists/common.txt -H "HOST: FUZZ.<URL>" http://<URL>
+```
+
 - `--hw` : Hide words with length equal to or less than the specified value
 - `-c` : Show output in color
 - `-t` : Number of threads

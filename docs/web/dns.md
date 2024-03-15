@@ -38,6 +38,32 @@ Connection: keep-alive
 Location: http://soccer.htb/
 ```
 
+If the port `53` is open we can also ddo something like
+
+```bash
+nslookup 10.10.10.29
+29.10.10.10.in-addr.arpa        name = bank.htb.
+```
+
+Then with `dig` we can go deeper.
+
+```bash
+dig axfr bank.htb @10.10.10.29                                                                 
+
+; <<>> DiG 9.18.18-0ubuntu0.22.04.2-Ubuntu <<>> axfr bank.htb @10.10.10.29
+;; global options: +cmd
+bank.htb.               604800  IN      SOA     bank.htb. chris.bank.htb. 2 604800 86400 2419200 604800
+bank.htb.               604800  IN      NS      ns.bank.htb.
+bank.htb.               604800  IN      A       10.10.10.29
+ns.bank.htb.            604800  IN      A       10.10.10.29
+www.bank.htb.           604800  IN      CNAME   bank.htb.
+bank.htb.               604800  IN      SOA     bank.htb. chris.bank.htb. 2 604800 86400 2419200 604800
+;; Query time: 184 msec
+;; SERVER: 10.10.10.29#53(10.10.10.29) (TCP)
+;; WHEN: Fri Mar 15 00:14:29 -03 2024
+;; XFR size: 6 records (messages 1, bytes 171)
+```
+
 Once we have the domain name, we can add it to the `/etc/hosts` file.
 
 ```bash
@@ -46,6 +72,7 @@ sudo nano /etc/hosts
 127.0.0.1       localhost
 127.0.1.1       dyallo-MS-7A39
 10.10.11.194    soccer.htb
+10.10.10.29     bank.htb
 ```
 
 Then when we access the ip address, we can see the website.
