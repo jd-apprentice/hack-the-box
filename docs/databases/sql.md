@@ -1,5 +1,6 @@
 ## SQL Injection
 
+https://portswigger.net/web-security/sql-injection/cheat-sheet
 https://portswigger.net/web-security/sql-injection
 
 If there is a input field in a web page, you can try to inject SQL commands to the database.
@@ -36,6 +37,7 @@ Escape character is '^]'.
 
 ```bash
 mysql -h <IP> -u root
+mysql --host=localhost --user=myname --password=password mydb
 ```
 
 ## Commannds
