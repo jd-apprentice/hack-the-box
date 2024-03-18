@@ -8,7 +8,7 @@ Cookies are small pieces of data that are stored in the user's browser. They are
 PHPSESSID=eyJ1c2VybmFtZSI6InRlc3QifQ%3D%3D
 ```
 
-The `%3D` is the URL encoded version of `=`.
+The `%3D` is the URL encoded version of `=`. asd
 
 Here we have a cookie that stores a value in base64, if we decode it we get:
 
