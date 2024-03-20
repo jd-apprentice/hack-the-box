@@ -64,6 +64,20 @@ bank.htb.               604800  IN      SOA     bank.htb. chris.bank.htb. 2 6048
 ;; XFR size: 6 records (messages 1, bytes 171)
 ```
 
+Reverse DNS lookup can also be used to find the domain name.
+
+```bash
+dig @ip -x ip
+;; AUTHORITY SECTION:
+37.13.10.in-addr.arpa.  604800  IN      SOA     www.x.jet. x.jet. 3 604800 86400 2419200
+```
+
+Where:
+
+- `@` is the DNS server to use.
+- `-x` is the reverse lookup option.
+- `ip` is the IP address to lookup.
+
 Once we have the domain name, we can add it to the `/etc/hosts` file.
 
 ```bash

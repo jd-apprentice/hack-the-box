@@ -23,3 +23,13 @@ While you are here, you can click on a request then CTRL+R to send it to the rep
 ![repeater](assets/repeater_2.png)
 
 And here we can modify the request and send it again.
+
+## Proxy
+
+### Intercept
+
+We can use the intercept to capture requests and save them to a file.
+
+![intercept](assets/intercept.png)         
+
+Here if we do right click and press `Copy to file` we can save the request to a file.                                       

