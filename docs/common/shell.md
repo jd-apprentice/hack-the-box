@@ -24,4 +24,5 @@ stty raw -echo; fg
 ```shell
 export TERM=xterm
 export SHELL=bash
+stty rows 48 columns 170
 ```
