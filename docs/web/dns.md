@@ -38,14 +38,7 @@ Connection: keep-alive
 Location: http://soccer.htb/
 ```
 
-If the port `53` is open we can also ddo something like
-
-```bash
-nslookup 10.10.10.29
-29.10.10.10.in-addr.arpa        name = bank.htb.
-```
-
-Then with `dig` we can go deeper.
+If we have the dns server, we can use dig to find subdomains.
 
 ```bash
 dig axfr bank.htb @10.10.10.29                                                                 

@@ -29,7 +29,9 @@ hashcat -a 3 -m 1400 <HASH> <PASSWORD><MASK> # https://hashcat.net/wiki/doku.php
 
 ```bash
 ssh2john id_rsa > id_rsa.hash
+zip2john <ZIP> > <ZIP>.text
 john --wordlist=/usr/share/wordlists/rockyou.txt id_rsa.hash
+john --wordlist=/usr/share/wordlists/rockyou.txt <ZIP>.text
 ```
 
 ## ZIP

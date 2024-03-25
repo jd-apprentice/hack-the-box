@@ -9,3 +9,12 @@ Requirements
 `.dmp` file
 
 [dump-password](https://github.com/CMEPW/keepass-dump-masterkey)
+
+## Opening KeePass Database
+
+```bash
+keepassxc-cli open --key-file New.key New.kdbx
+press enter
+ls
+show -s <file>
+```
