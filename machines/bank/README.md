@@ -7,7 +7,7 @@ User FLAG
 4. `dig axfr bank.htb @10.10.10.29`
 5. add domain to `/etc/hosts`
 6. enter webpage
-7. `dirsearch -u http://bank.htb -m GET directory_list_lowercase_2.3_medium.txt`
+7. `feroxbuster --insecure -u http://bank.htb -m GET -w ~/Documents/Security/wordlists/directory_list_lowercase_2.3_medium.txt --threads 200 -C 401`
 8. find `balance-transfer` page
 9. obtain credentials and login to bank application
 10. reverse shell with .htb extension
