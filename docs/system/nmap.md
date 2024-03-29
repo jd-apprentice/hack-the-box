@@ -6,6 +6,8 @@ Nmap is a network scanner that can be used to discover hosts and services on a c
 
 ```shell
 nmap -p- -T4 <IP> -oA fullport --min-rate 5000
+sudo nmap -sU --open -T4 --top-ports 1000 -o udp 10.13.37.11
+nmap -sUCV -p161 10.13.37.11 -oN udpscan
 ```
 
 - `-p-` : Scan all ports

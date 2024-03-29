@@ -19,3 +19,14 @@ wfuzz -c --hh=3245 -w ~/Documents/Security/wordlists/common.txt -H "HOST: FUZZ.<
 - `-t` : Number of threads
 - `-w` : Wordlist to use
 - `FUZZ` : Where the payload will be placed
+
+## Wfpayload
+
+Wfpayload is a tool that generates payloads for fuzzing.
+
+In this case where we know the range of the payload we can use the following command to generate a payload.
+
+```bash
+wfpayload -z range --zD 0000-6000 > payload.txt
+wfuzz -c --hw=31 --hc=404 -w payload.txt http://10.13.37.11/backups/backup_2024032823FUZZ.zip
+```
