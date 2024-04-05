@@ -10,6 +10,7 @@ My name is Jonathan. In the field of infrastructure, automation and cybersecurit
 
 - [simple-ctf ENG](https://blog.jonathan.com.ar/simple-ctf-writeup-try-hack-me)
 - [bashed ESP](https://blog.jonathan.com.ar/bashed-writeup-es-hack-the-box)
+- [bank ESP](https://blog.jonathan.com.ar/bank-writeup-es-hack-the-box)
 
 ## Find me on
 
