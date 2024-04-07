@@ -17,6 +17,12 @@ nmap -sUCV -p161 10.13.37.11 -oN udpscan
 - `sV` : Probe open ports to determine service/version info
 - `--open` : Only show open ports
 
+## UDP
+
+```shell
+sudo nmap -sU --open -T4 --top-ports 1000 -o udp <IP>
+```
+
 ## Scripts for NMAP
 
 ```shell
