@@ -1,0 +1,43 @@
+dirsearch -u http://jerry.htb:8080           
+
+  _|. _ _  _  _  _ _|_    v0.4.2
+ (_||| _) (/_(_|| (_| )
+
+Extensions: php, aspx, jsp, html, js | HTTP method: GET | Threads: 30 | Wordlist size: 10927
+
+Output File: /home/dyallo/.dirsearch/reports/jerry.htb-8080/_24-05-17_22-02-52.txt
+
+Error Log: /home/dyallo/.dirsearch/logs/errors-24-05-17_22-02-52.log
+
+Target: http://jerry.htb:8080/
+
+[22:02:55] Starting: 
+[22:03:11] 400 -    0B  - /\..\..\..\..\..\..\..\..\..\etc\passwd
+[22:03:12] 400 -    0B  - /a%5c.aspx
+[22:03:34] 200 -   19KB - /docs/
+[22:03:34] 302 -    0B  - /docs  ->  /docs/
+[22:03:36] 302 -    0B  - /examples  ->  /examples/
+[22:03:36] 200 -    1KB - /examples/
+[22:03:36] 200 -    7KB - /examples/servlets/index.html
+[22:03:36] 200 -  945B  - /examples/servlets/servlet/RequestHeaderExample
+[22:03:36] 200 -  637B  - /examples/servlets/servlet/CookieExample
+[22:03:37] 400 -    0B  - /faces/javax.faces.resource/web.xml?ln=..\\WEB-INF
+[22:03:37] 200 -  718B  - /examples/jsp/snp/snoop.jsp
+[22:03:37] 200 -   21KB - /favicon.ico
+[22:03:41] 302 -    0B  - /host-manager/  ->  /host-manager/html
+[22:03:41] 401 -    2KB - /host-manager/html
+[22:03:43] 200 -   11KB - /index.jsp
+[22:03:48] 302 -    0B  - /manager  ->  /manager/
+[22:03:48] 302 -    0B  - /manager/  ->  /manager/html
+[22:03:48] 401 -    2KB - /manager/jmxproxy/?get=java.lang:type=Memory&att=HeapMemoryUsage&key=used
+[22:03:48] 401 -    2KB - /manager/status/all
+[22:03:49] 401 -    2KB - /manager/jmxproxy/?get=java.lang:type=Memory&att=HeapMemoryUsage
+[22:03:49] 401 -    2KB - /manager/jmxproxy/?set=Catalina%3Atype%3DValve%2Cname%3DErrorReportValve%2Chost%3Dlocalhost&att=debug&val=cow
+[22:03:49] 401 -    2KB - /manager/html/
+[22:03:49] 401 -    2KB - /manager/jmxproxy/?qry=STUFF
+[22:03:49] 401 -    2KB - /manager/html
+[22:03:49] 401 -    2KB - /manager/jmxproxy/?set=BEANNAME&att=MYATTRIBUTE&val=NEWVALUE
+[22:03:49] 401 -    2KB - /manager/jmxproxy
+[22:03:49] 401 -    2KB - /manager/jmxproxy/?invoke=Catalina%3Atype%3DService&op=findConnectors&ps=
+[22:03:49] 401 -    2KB - /manager/jmxproxy/?get=BEANNAME&att=MYATTRIBUTE&key=MYKEY
+[22:03:49] 401 -    2KB - /manager/jmxproxy/?invoke=BEANNAME&op=METHODNAME&ps=COMMASEPARATEDPARAMETERS
