@@ -1,0 +1,39 @@
+# Nmap 7.80 scan initiated Sat May 18 19:52:08 2024 as: nmap -p- -T4 --min-rate 5000 -sC -sV -A -o poo -Pn 10.13.38.11
+Nmap scan report for 10.13.38.11
+Host is up (0.24s latency).
+Not shown: 65533 filtered ports
+PORT     STATE SERVICE  VERSION
+80/tcp   open  http     Microsoft IIS httpd 10.0
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-server-header: Microsoft-IIS/10.0
+|_http-title: IIS Windows Server
+1433/tcp open  ms-sql-s Microsoft SQL Server 2017 14.00.2027.00; RTM+
+| ms-sql-ntlm-info: 
+|   Target_Name: POO
+|   NetBIOS_Domain_Name: POO
+|   NetBIOS_Computer_Name: COMPATIBILITY
+|   DNS_Domain_Name: intranet.poo
+|   DNS_Computer_Name: COMPATIBILITY.intranet.poo
+|   DNS_Tree_Name: intranet.poo
+|_  Product_Version: 10.0.17763
+| ssl-cert: Subject: commonName=SSL_Self_Signed_Fallback
+| Not valid before: 2024-05-14T11:47:18
+|_Not valid after:  2054-05-14T11:47:18
+|_ssl-date: 2024-05-18T22:53:09+00:00; +5s from scanner time.
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 4s, deviation: 0s, median: 4s
+| ms-sql-info: 
+|   10.13.38.11:1433: 
+|     Version: 
+|       name: Microsoft SQL Server 2017 RTM+
+|       number: 14.00.2027.00
+|       Product: Microsoft SQL Server 2017
+|       Service pack level: RTM
+|       Post-SP patches applied: true
+|_    TCP port: 1433
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat May 18 19:53:04 2024 -- 1 IP address (1 host up) scanned in 55.82 seconds

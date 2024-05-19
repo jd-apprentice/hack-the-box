@@ -1,0 +1,75 @@
+[20:01:48] 301 -  146B  - /js  ->  http://intranet.poo/js/             
+[20:01:48] 403 -  312B  - /%2e%2e//google.com                         
+[20:01:51] 200 -   10KB - /.DS_Store                                  
+[20:01:51] 200 -   10KB - /.ds_store                                    
+[20:01:58] 301 -  152B  - /.Trashes  ->  http://intranet.poo/.Trashes/
+[20:01:58] 301 -  152B  - /.trashes  ->  http://intranet.poo/.trashes/ 
+[20:02:02] 401 -    1KB - /ADMIN                                      
+[20:02:02] 401 -    1KB - /Admin                                      
+[20:02:02] 401 -    1KB - /Admin/knowledge/dsmgr/users/UserManager.asp
+[20:02:02] 401 -    1KB - /Admin/knowledge/dsmgr/users/GroupManager.asp
+[20:02:02] 401 -    1KB - /Admin/login/                              
+[20:02:04] 403 -    1KB - /META-INF/                                   
+[20:02:04] 301 -  152B  - /META-INF  ->  http://intranet.poo/META-INF/
+[20:02:05] 301 -  156B  - /New%20Folder  ->  http://intranet.poo/New%20Folder/
+[20:02:05] 301 -  162B  - /New%20folder%20(2)  ->  http://intranet.poo/New%20folder%20(2)/                                                                                          
+[20:02:08] 403 -  312B  - /\..\..\..\..\..\..\..\..\..\etc\passwd    
+[20:02:14] 401 -    1KB - /admin/login.do                           
+[20:02:14] 401 -    1KB - /admin/login.htm                           
+[20:02:14] 401 -    1KB - /admin/login.py                            
+[20:02:14] 401 -    1KB - /admin/logon.jsp                            
+[20:02:14] 401 -    1KB - /admin/login.rb                          
+[20:02:14] 401 -    1KB - /admin/logs/                               
+[20:02:14] 401 -    1KB - /admin/logs/access-log                           
+[20:02:14] 401 -    1KB - /admin/logs/access.log       
+[20:02:14] 401 -    1KB - /admin/logs/access_log
+[20:02:14] 401 -    1KB - /admin/logs/err.log
+[20:02:14] 401 -    1KB - /admin/logs/error-log
+[20:02:14] 401 -    1KB - /admin/logs/error.log
+[20:02:14] 401 -    1KB - /admin/manage
+[20:02:14] 401 -    1KB - /admin/logs/login.txt
+[20:02:14] 401 -    1KB - /admin/logs/error_log
+[20:02:14] 401 -    1KB - /admin/manage.asp
+[20:02:14] 401 -    1KB - /admin/manage/admin.asp
+[20:02:14] 401 -    1KB - /admin/mysql/index.php
+[20:02:14] 401 -    1KB - /admin/manage/login.asp
+[20:02:14] 401 -    1KB - /admin/mysql/
+[20:02:14] 401 -    1KB - /admin/phpMyAdmin
+[20:02:14] 401 -    1KB - /admin/mysql2/index.php
+[20:02:14] 401 -    1KB - /admin/phpMyAdmin/
+[20:02:14] 401 -    1KB - /admin/phpmyadmin/
+[20:02:14] 401 -    1KB - /admin/phpMyAdmin/index.php
+[20:02:14] 401 -    1KB - /admin/pMA/
+[20:02:14] 401 -    1KB - /admin/phpmyadmin/index.php
+[20:02:14] 401 -    1KB - /admin/phpmyadmin2/index.php
+[20:02:14] 401 -    1KB - /admin/pma/
+[20:02:14] 401 -    1KB - /admin/PMA/index.php
+[20:02:14] 401 -    1KB - /admin/pma/index.php
+[20:02:14] 401 -    1KB - /admin/pol_log.txt
+[20:02:14] 401 -    1KB - /admin/portalcollect.php?f=http://xxx&t=js
+[20:02:14] 401 -    1KB - /admin/release
+[20:02:14] 401 -    1KB - /admin/private/logs
+[20:02:14] 401 -    1KB - /admin/scripts/fckeditor
+[20:02:14] 401 -    1KB - /admin/secure/logon.jsp
+[20:02:14] 401 -    1KB - /admin/signin
+[20:02:14] 401 -    1KB - /admin/sqladmin/
+[20:02:14] 401 -    1KB - /admin/sxd/
+[20:02:14] 401 -    1KB - /admin/sysadmin/
+[20:02:14] 401 -    1KB - /admin/tiny_mce
+[20:02:14] 401 -    1KB - /admin/uploads.php
+[20:02:14] 401 -    1KB - /admin/upload.php
+[20:02:14] 401 -    1KB - /admin/tinymce
+[20:02:14] 401 -    1KB - /admin/web/
+[20:02:14] 401 -    1KB - /admin/user_count.txt
+[20:02:36] 301 -  147B  - /dev  ->  http://intranet.poo/dev/
+[20:02:36] 403 -    1KB - /dev/
+[20:02:44] 301 -  150B  - /images  ->  http://intranet.poo/images/
+[20:02:44] 403 -    1KB - /images/[20:02:47] 403 -    1KB - /js/
+[20:03:01] 301 -  151B  - /plugins  ->  http://intranet.poo/plugins/
+[20:03:01] 403 -    1KB - /plugins/
+[20:03:12] 301 -  153B  - /templates  ->  http://intranet.poo/templates/
+[20:03:12] 403 -    1KB - /templates/
+[20:03:13] 301 -  150B  - /themes  ->  http://intranet.poo/themes/
+[20:03:13] 403 -    1KB - /themes/
+[20:03:15] 301 -  151B  - /uploads  ->  http://intranet.poo/uploads/
+[20:03:15] 403 -    1KB - /uploads/
