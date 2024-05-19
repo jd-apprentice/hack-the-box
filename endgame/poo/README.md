@@ -121,19 +121,6 @@ python3 scripts/ds_walk.py -u http://10.13.38.11
 ```
 
 ```shell
-[*] Scanning in progress...
-[+] Found 5 directories
-[+] http://10.13.38.11/ds_sto*~1
-[+] http://10.13.38.11/newfol*~1
-[+] http://10.13.38.11/newfol*~2
-[+] http://10.13.38.11/templa*~1
-[+] http://10.13.38.11/trashe*~1
-[+] Found 1 files
-[+] http://10.13.38.11/web*~1.con*
-[*] Auxiliary module execution completed
-```
-
-```shell
 msf6 auxiliary(scanner/http/iis_shortname_scanner) > set PATH dev/304c0c90fbc6520610abbf378e2339d1/db
 PATH => dev/304c0c90fbc6520610abbf378e2339d1/db
 msf6 auxiliary(scanner/http/iis_shortname_scanner) > run

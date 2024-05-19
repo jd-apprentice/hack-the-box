@@ -2,3 +2,6 @@ scripts/*.py
 out/
 venv
 node_modules
+bank/
+__pycache__/
+nikto
