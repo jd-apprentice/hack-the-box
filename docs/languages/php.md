@@ -2,6 +2,10 @@
 
 Common exploits in PHP.
 
+## Start a Web Server
+
+php -S 127.0.0.1:8000
+
 ## Cookies
 
 `PHPSESSID` is the default session cookie name.

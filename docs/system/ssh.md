@@ -2,6 +2,12 @@
 
 SSH (Secure Shell) is a network protocol that allows secure communication between two computers. It is used to log into a remote machine and execute commands.
 
+## Create a reverse tunnel
+
+```bash
+ssh -R 80:localhost:6969 nokey@localhost.run
+```
+
 ## Connect via ssh
 
 ```bash
