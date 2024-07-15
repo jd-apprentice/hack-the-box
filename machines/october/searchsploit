@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------
+ Exploit Title                                                                                                                                    |  Path
+-------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------
+[01;31m[KOctober[m[K CMS - Upload Protection Bypass Code Execution (Metasploit)                                                                                | php/remote/47376.rb
+[01;31m[KOctober[m[K CMS 1.0.412 - Multiple Vulnerabilities                                                                                                    | php/webapps/41936.txt
+[01;31m[KOctober[m[K CMS < 1.0.431 - Cross-Site Scripting                                                                                                      | php/webapps/44144.txt
+[01;31m[KOctober[m[K CMS Build 465 - Arbitrary File Read Exploit (Authenticated)                                                                               | php/webapps/49045.sh
+[01;31m[KOctober[m[K CMS User Plugin 1.4.5 - Persistent Cross-Site Scripting                                                                                   | php/webapps/44546.txt
+[01;31m[KOctober[m[K CMS v3.4.4 - Stored Cross-Site Scripting (XSS) (Authenticated)                                                                            | php/webapps/51630.txt
+[01;31m[KOctober[m[KCMS 1.0.425 (Build 425) - Cross-Site Scripting                                                                                             | php/webapps/42978.txt
+[01;31m[KOctober[m[KCMS 1.0.426 (Build 426) - Cross-Site Request Forgery                                                                                       | php/webapps/43106.txt
+-------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------
+Shellcodes: No Results
