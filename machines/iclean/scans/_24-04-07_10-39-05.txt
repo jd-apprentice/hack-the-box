@@ -1,0 +1,11 @@
+# Dirsearch started Sun Apr  7 10:48:10 2024 as: dirsearch.py -u http://capiclean.htb -m GET -w /home/dyallo/Documents/Security/wordlists/directory_list_lowercase_2.3_medium.txt
+
+200     5KB  http://capiclean.htb:80/about
+200     6KB  http://capiclean.htb:80/choose
+302   189B   http://capiclean.htb:80/dashboard    -> REDIRECTS TO: /
+200     2KB  http://capiclean.htb:80/login
+302   189B   http://capiclean.htb:80/logout    -> REDIRECTS TO: /
+200     2KB  http://capiclean.htb:80/quote
+403   278B   http://capiclean.htb:80/server-status
+200     8KB  http://capiclean.htb:80/services
+200     8KB  http://capiclean.htb:80/team
