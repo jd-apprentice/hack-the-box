@@ -1,0 +1,47 @@
+# Nmap 7.80 scan initiated Mon Mar 18 21:58:50 2024 as: nmap --script ssh2-enum-algos -o ssh2-enum-algos 10.13.37.10
+Nmap scan report for 10.13.37.10 (10.13.37.10)
+Host is up (0.18s latency).
+Not shown: 995 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+| ssh2-enum-algos: 
+|   kex_algorithms: (6)
+|       curve25519-sha256@libssh.org
+|       ecdh-sha2-nistp256
+|       ecdh-sha2-nistp384
+|       ecdh-sha2-nistp521
+|       diffie-hellman-group-exchange-sha256
+|       diffie-hellman-group14-sha1
+|   server_host_key_algorithms: (5)
+|       ssh-rsa
+|       rsa-sha2-512
+|       rsa-sha2-256
+|       ecdsa-sha2-nistp256
+|       ssh-ed25519
+|   encryption_algorithms: (6)
+|       chacha20-poly1305@openssh.com
+|       aes128-ctr
+|       aes192-ctr
+|       aes256-ctr
+|       aes128-gcm@openssh.com
+|       aes256-gcm@openssh.com
+|   mac_algorithms: (10)
+|       umac-64-etm@openssh.com
+|       umac-128-etm@openssh.com
+|       hmac-sha2-256-etm@openssh.com
+|       hmac-sha2-512-etm@openssh.com
+|       hmac-sha1-etm@openssh.com
+|       umac-64@openssh.com
+|       umac-128@openssh.com
+|       hmac-sha2-256
+|       hmac-sha2-512
+|       hmac-sha1
+|   compression_algorithms: (2)
+|       none
+|_      zlib@openssh.com
+53/tcp   open  domain
+80/tcp   open  http
+5555/tcp open  freeciv
+7777/tcp open  cbt
+
+# Nmap done at Mon Mar 18 21:59:07 2024 -- 1 IP address (1 host up) scanned in 17.30 seconds

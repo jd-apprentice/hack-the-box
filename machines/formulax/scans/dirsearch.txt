@@ -1,0 +1,15 @@
+# Dirsearch started Tue Mar 12 21:48:03 2024 as: dirsearch.py -r -u http://10.10.11.6 -m GET PUT POST -w /home/dyallo/Documents/Security/wordlists/common.txt
+
+200    46B   http://10.10.11.6:80/ADMIN
+200    46B   http://10.10.11.6:80/Admin
+301   181B   http://10.10.11.6:80/Scripts    -> REDIRECTS TO: /Scripts/
+200    46B   http://10.10.11.6:80/admin
+200    46B   http://10.10.11.6:80/changepassword
+200    46B   http://10.10.11.6:80/chat
+200    46B   http://10.10.11.6:80/contact_us
+200    34KB  http://10.10.11.6:80/favicon.ico
+301   173B   http://10.10.11.6:80/img    -> REDIRECTS TO: /img/
+200    46B   http://10.10.11.6:80/logout
+301   187B   http://10.10.11.6:80/restricted    -> REDIRECTS TO: /restricted/
+301   181B   http://10.10.11.6:80/scripts    -> REDIRECTS TO: /scripts/
+301   179B   http://10.10.11.6:80/static    -> REDIRECTS TO: /static/

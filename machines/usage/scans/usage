@@ -1,0 +1,18 @@
+# Nmap 7.80 scan initiated Sat Apr 13 16:01:16 2024 as: nmap -T4 --min-rate 5000 -sC -sV -A -o usage -Pn 10.129.46.116
+Nmap scan report for 10.129.46.116 (10.129.46.116)
+Host is up (0.20s latency).
+Not shown: 993 closed ports
+PORT     STATE    SERVICE   VERSION
+22/tcp   open     ssh       OpenSSH 8.9p1 Ubuntu 3ubuntu0.6 (Ubuntu Linux; protocol 2.0)
+80/tcp   open     http      nginx 1.18.0 (Ubuntu)
+|_http-server-header: nginx/1.18.0 (Ubuntu)
+|_http-title: Did not follow redirect to http://usage.htb/
+106/tcp  filtered pop3pw
+211/tcp  filtered 914c-g
+1151/tcp filtered unizensus
+2170/tcp filtered eyetv
+6003/tcp filtered X11:3
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Apr 13 16:01:34 2024 -- 1 IP address (1 host up) scanned in 17.19 seconds

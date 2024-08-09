@@ -1,0 +1,17 @@
+# Nmap 7.80 scan initiated Sat Mar 23 16:04:00 2024 as: nmap --script vuln -o vul 10.10.11.8
+Pre-scan script results:
+| broadcast-avahi-dos: 
+|   Discovered hosts:
+|     224.0.0.251
+|   After NULL UDP avahi packet DoS (CVE-2011-1002).
+|_  Hosts are all up (not vulnerable).
+Nmap scan report for 10.10.11.8 (10.10.11.8)
+Host is up (0.18s latency).
+Not shown: 998 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+5000/tcp open  upnp
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+
+# Nmap done at Sat Mar 23 16:04:58 2024 -- 1 IP address (1 host up) scanned in 58.27 seconds

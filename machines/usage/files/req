@@ -1,0 +1,16 @@
+POST /post-login HTTP/1.1
+Host: usage.htb
+Content-Length: 66
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+Origin: http://usage.htb
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.6312.58 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Referer: http://usage.htb/login
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: XSRF-TOKEN=eyJpdiI6ImNVZ2NtcUJZL2VVVDJYKzVONVpxVkE9PSIsInZhbHVlIjoiYllKUUNyMEc0TnlQU2F4MWo1R3RHbllpZmxpdlYreHorOSs2TTlKRHhyWFYxV1J3S0tYYk1mWHZ5VnNJOVA2Wm1ieWRvTkZDZ2Q2ZDZSVlZ5OUNaQkRua294M3RkeUdKRDJ5NUF1c05LUmlyWnVMcngvYzJPekt0cmNjMFBubkciLCJtYWMiOiJkZDM5ZjEwNjQ4MTc5ZmZjZTExZDZhYjY2YTExYTRhY2I2NzE0YTdjZDI2NzRmZWQ3Zjc0NDdkMGI3N2Y3MDgwIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6ImJ0eStMQ2tQalVMV3pMaUVwTDlJU1E9PSIsInZhbHVlIjoic0lqbEdDOWRyRVBMYUlzcE5XRFZ6WDNRdDBLUjNZYWlTdkVzeDM1ODNpb1Y2S2lkeHQ4VXRkRG9UOGlVak9yOXBzaWR4WjhSTHhuL1R3dEdCNkpMYWZIamwwUWZHMnhvTk9UR1UxYXkyelpBYlAwcDlZWnRPdjh3YXpVT1hoZGQiLCJtYWMiOiI3OGE1NWFhYmQwMzJhMmViZTA5YTcxZmEwMTY5Y2UxNzNiNjBhZWMyMTUxY2E3NDc2MzE1YmVjMTYwMWVmNTBiIiwidGFnIjoiIn0%3D
+Connection: close
+
+_token=GWcJX9p6H02dxrXPRZ9BbkKU0Q5gc0COtDUisIsX&email=a&password=a

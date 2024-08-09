@@ -1,0 +1,140 @@
+# Nmap 7.80 scan initiated Mon Mar 25 22:35:30 2024 as: nmap --script vuln -o vul 10.10.11.3
+Pre-scan script results:
+| broadcast-avahi-dos: 
+|   Discovered hosts:
+|     224.0.0.251
+|   After NULL UDP avahi packet DoS (CVE-2011-1002).
+|_  Hosts are all up (not vulnerable).
+Nmap scan report for office.htb (10.10.11.3)
+Host is up (0.18s latency).
+Not shown: 988 filtered ports
+PORT     STATE SERVICE
+53/tcp   open  domain
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+80/tcp   open  http
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+| http-aspnet-debug: 
+|_  status: DEBUG is enabled
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=office.htb
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: http://office.htb:80/
+|     Form id: login-form-16
+|     Form action: /index.php
+|     
+|     Path: http://office.htb:80/index.php/holograms-are-evolving
+|     Form id: login-form-16
+|     Form action: /index.php/holograms-are-evolving
+|     
+|     Path: http://office.htb:80/index.php?view=article&amp;id=2:iron-man-mark-1&amp;catid=8
+|     Form id: login-form-16
+|     Form action: /index.php?view=article&id=2:iron-man-mark-1&catid=8
+|     
+|     Path: http://office.htb:80/index.php?view=article&amp;id=3:iron-man-mark-3&amp;catid=8
+|     Form id: login-form-16
+|     Form action: /index.php?view=article&id=3:iron-man-mark-3&catid=8
+|     
+|     Path: http://office.htb:80/index.php/component/users/reset?Itemid=101
+|     Form id: user-registration
+|     Form action: /index.php/component/users/?task=reset.request&Itemid=101
+|     
+|     Path: http://office.htb:80/index.php/component/users/reset?Itemid=101
+|     Form id: login-form-16
+|     Form action: /index.php/component/users/reset?Itemid=101
+|     
+|     Path: http://office.htb:80/index.php?view=category&amp;id=8
+|     Form id: login-form-16
+|     Form action: /index.php?view=category&id=8
+|     
+|     Path: http://office.htb:80/index.php?view=article&amp;id=4:iron-man-mark-4&amp;catid=8
+|     Form id: login-form-16
+|     Form action: /index.php?view=article&id=4:iron-man-mark-4&catid=8
+|     
+|     Path: http://office.htb:80/index.php
+|     Form id: login-form-16
+|     Form action: /index.php
+|     
+|     Path: http://office.htb:80/index.php/component/users/remind?Itemid=101
+|     Form id: user-registration
+|     Form action: /index.php/component/users/?task=remind.remind&Itemid=101
+|     
+|     Path: http://office.htb:80/index.php/component/users/remind?Itemid=101
+|     Form id: login-form-16
+|     Form action: /index.php/component/users/remind?Itemid=101
+|     
+|     Path: http://office.htb:80/index.php/holograms-are-evolving?view=category&amp;id=8
+|     Form id: login-form-16
+|_    Form action: /index.php/holograms-are-evolving?view=category&id=8
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+| http-enum: 
+|   /administrator/: Possible admin folder
+|   /administrator/index.php: Possible admin folder
+|   /Administrator/: Possible admin folder
+|   /robots.txt: Robots file
+|   /administrator/manifests/files/joomla.xml: Joomla version 4.2.7
+|   /htaccess.txt: Joomla!
+|   /README.txt: Interesting, a readme.
+|   /cache/: Potentially interesting folder
+|   /icons/: Potentially interesting folder w/ directory listing
+|   /images/: Potentially interesting folder
+|   /includes/: Potentially interesting folder
+|   /modules/: Potentially interesting folder
+|   /templates/: Potentially interesting folder
+|_  /tmp/: Potentially interesting folder
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-trace: TRACE is enabled
+88/tcp   open  kerberos-sec
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+139/tcp  open  netbios-ssn
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+389/tcp  open  ldap
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+|_sslv2-drown: 
+443/tcp  open  https
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+| http-enum: 
+|_  /icons/: Potentially interesting folder w/ directory listing
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-trace: TRACE is enabled
+| ssl-dh-params: 
+|   VULNERABLE:
+|   Diffie-Hellman Key Exchange Insufficient Group Strength
+|     State: VULNERABLE
+|       Transport Layer Security (TLS) services that use Diffie-Hellman groups
+|       of insufficient strength, especially those using one of a few commonly
+|       shared groups, may be susceptible to passive eavesdropping attacks.
+|     Check results:
+|       WEAK DH GROUP 1
+|             Cipher Suite: TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
+|             Modulus Type: Safe prime
+|             Modulus Source: RFC2409/Oakley Group 2
+|             Modulus Length: 1024
+|             Generator Length: 8
+|             Public Key Length: 1024
+|     References:
+|_      https://weakdh.org
+|_sslv2-drown: 
+445/tcp  open  microsoft-ds
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+464/tcp  open  kpasswd5
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+593/tcp  open  http-rpc-epmap
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+636/tcp  open  ldapssl
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+|_sslv2-drown: 
+3268/tcp open  globalcatLDAP
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+3269/tcp open  globalcatLDAPssl
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+|_sslv2-drown: 
+
+Host script results:
+|_samba-vuln-cve-2012-1182: Could not negotiate a connection:SMB: Failed to receive bytes: ERROR
+|_smb-vuln-ms10-054: false
+|_smb-vuln-ms10-061: Could not negotiate a connection:SMB: Failed to receive bytes: ERROR
+
+# Nmap done at Mon Mar 25 22:41:28 2024 -- 1 IP address (1 host up) scanned in 358.18 seconds

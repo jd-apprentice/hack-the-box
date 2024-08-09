@@ -1,0 +1,63 @@
+# Nmap 7.80 scan initiated Sat May  4 16:04:39 2024 as: nmap -T4 --min-rate 5000 -sC -sV -A -o mailing -Pn 10.129.56.156
+Nmap scan report for 10.129.56.156
+Host is up (0.18s latency).
+Not shown: 990 filtered ports
+PORT    STATE SERVICE       VERSION
+25/tcp  open  smtp          hMailServer smtpd
+| smtp-commands: mailing.htb, SIZE 20480000, AUTH LOGIN PLAIN, HELP, 
+|_ 211 DATA HELO EHLO MAIL NOOP QUIT RCPT RSET SAML TURN VRFY 
+80/tcp  open  http          Microsoft IIS httpd 10.0
+|_http-server-header: Microsoft-IIS/10.0
+|_http-title: Did not follow redirect to http://mailing.htb
+110/tcp open  pop3          hMailServer pop3d
+|_pop3-capabilities: TOP USER UIDL
+135/tcp open  msrpc         Microsoft Windows RPC
+139/tcp open  netbios-ssn   Microsoft Windows netbios-ssn
+143/tcp open  imap          hMailServer imapd
+|_imap-capabilities: completed NAMESPACE OK CAPABILITY QUOTA IMAP4 ACL CHILDREN SORT RIGHTS=texkA0001 IMAP4rev1 IDLE
+445/tcp open  microsoft-ds?
+465/tcp open  ssl/smtp      hMailServer smtpd
+| smtp-commands: mailing.htb, SIZE 20480000, AUTH LOGIN PLAIN, HELP, 
+|_ 211 DATA HELO EHLO MAIL NOOP QUIT RCPT RSET SAML TURN VRFY 
+| ssl-cert: Subject: commonName=mailing.htb/organizationName=Mailing Ltd/stateOrProvinceName=EU\Spain/countryName=EU
+| Not valid before: 2024-02-27T18:24:10
+|_Not valid after:  2029-10-06T18:24:10
+|_ssl-date: TLS randomness does not represent time
+587/tcp open  smtp?
+| fingerprint-strings: 
+|   GenericLines: 
+|     220 mailing.htb ESMTP
+|     sequence of commands
+|     sequence of commands
+|   NULL: 
+|_    220 mailing.htb ESMTP
+| smtp-commands: mailing.htb, SIZE 20480000, STARTTLS, AUTH LOGIN PLAIN, HELP, 
+|_ 211 DATA HELO EHLO MAIL NOOP QUIT RCPT RSET SAML TURN VRFY 
+| ssl-cert: Subject: commonName=mailing.htb/organizationName=Mailing Ltd/stateOrProvinceName=EU\Spain/countryName=EU
+| Not valid before: 2024-02-27T18:24:10
+|_Not valid after:  2029-10-06T18:24:10
+|_ssl-date: TLS randomness does not represent time
+993/tcp open  ssl/imap      hMailServer imapd
+|_imap-capabilities: completed NAMESPACE OK CAPABILITY QUOTA IMAP4 ACL CHILDREN SORT RIGHTS=texkA0001 IMAP4rev1 IDLE
+| ssl-cert: Subject: commonName=mailing.htb/organizationName=Mailing Ltd/stateOrProvinceName=EU\Spain/countryName=EU
+| Not valid before: 2024-02-27T18:24:10
+|_Not valid after:  2029-10-06T18:24:10
+|_ssl-date: TLS randomness does not represent time
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port587-TCP:V=7.80%I=7%D=5/4%Time=663686CE%P=x86_64-pc-linux-gnu%r(NULL
+SF:,17,"220\x20mailing\.htb\x20ESMTP\r\n")%r(GenericLines,53,"220\x20maili
+SF:ng\.htb\x20ESMTP\r\n503\x20Bad\x20sequence\x20of\x20commands\r\n503\x20
+SF:Bad\x20sequence\x20of\x20commands\r\n");
+Service Info: Host: mailing.htb; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: 3s
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2024-05-04T19:05:13
+|_  start_date: N/A
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat May  4 16:05:51 2024 -- 1 IP address (1 host up) scanned in 71.99 seconds

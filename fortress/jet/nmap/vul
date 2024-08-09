@@ -1,0 +1,39 @@
+# Nmap 7.80 scan initiated Mon Mar 18 20:19:49 2024 as: nmap --script vuln -o vul 10.13.37.10
+Pre-scan script results:
+| broadcast-avahi-dos: 
+|   Discovered hosts:
+|     224.0.0.251
+|   After NULL UDP avahi packet DoS (CVE-2011-1002).
+|_  Hosts are all up (not vulnerable).
+Nmap scan report for 10.13.37.10 (10.13.37.10)
+Host is up (0.18s latency).
+Not shown: 995 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+53/tcp   open  domain
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+80/tcp   open  http
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+| http-vuln-cve2011-3192: 
+|   VULNERABLE:
+|   Apache byterange filter DoS
+|     State: VULNERABLE
+|     IDs:  BID:49303  CVE:CVE-2011-3192
+|       The Apache web server is vulnerable to a denial of service attack when numerous
+|       overlapping byte ranges are requested.
+|     Disclosure date: 2011-08-19
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3192
+|       https://seclists.org/fulldisclosure/2011/Aug/175
+|       https://www.tenable.com/plugins/nessus/55976
+|_      https://www.securityfocus.com/bid/49303
+5555/tcp open  freeciv
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+7777/tcp open  cbt
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+
+# Nmap done at Mon Mar 18 20:27:27 2024 -- 1 IP address (1 host up) scanned in 458.08 seconds

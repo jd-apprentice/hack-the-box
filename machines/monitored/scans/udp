@@ -1,0 +1,15 @@
+# Nmap 7.80 scan initiated Fri Mar  8 01:11:54 2024 as: nmap -p- -T4 --min-rate 5000 -sU -o monitored --top-ports 100 10.10.11.248
+Nmap scan report for monitored.htb (10.10.11.248)
+Host is up (0.17s latency).
+Not shown: 92 open|filtered ports
+PORT      STATE  SERVICE
+123/udp   open   ntp
+161/udp   open   snmp
+500/udp   closed isakmp
+1645/udp  closed radius
+2000/udp  closed cisco-sccp
+2222/udp  closed msantipiracy
+49152/udp closed unknown
+49156/udp closed unknown
+
+# Nmap done at Fri Mar  8 01:11:55 2024 -- 1 IP address (1 host up) scanned in 0.99 seconds

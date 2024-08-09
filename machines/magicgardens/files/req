@@ -1,0 +1,16 @@
+POST /admin/login/?next=/admin/manage/login/ HTTP/1.1
+Host: magicgardens.htb
+Content-Length: 140
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+Origin: http://magicgardens.htb
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.6367.118 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Referer: http://magicgardens.htb/admin/login/?next=/admin/manage/login/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: csrftoken=069kIGPsb1U12Jb5Yg1Xdo093uoXnxyP
+Connection: close
+
+csrfmiddlewaretoken=ORsjRbrCDYhd2oQ2uF8rMsaX7bFFHioMENrtpH6UEP14UXRXiLZePG0W0vTsUFMr&username=a&password=a&next=%2Fadmin%2Fmanage%2Flogin%2F

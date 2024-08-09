@@ -1,0 +1,28 @@
+{
+    "links": {
+        "self": "http:\/\/10.10.11.3\/api\/index.php\/v1\/users?public=true"
+    },
+    "data": [
+        {
+            "type": "users",
+            "id": "474",
+            "attributes": {
+                "id": 474,
+                "name": "Tony Stark",
+                "username": "Administrator",
+                "email": "Administrator@holography.htb",
+                "block": 0,
+                "sendEmail": 1,
+                "registerDate": "2023-04-13 23:27:32",
+                "lastvisitDate": "2024-01-24 13:00:47",
+                "lastResetTime": null,
+                "resetCount": 0,
+                "group_count": 1,
+                "group_names": "Super Users"
+            }
+        }
+    ],
+    "meta": {
+        "total-pages": 1
+    }
+}

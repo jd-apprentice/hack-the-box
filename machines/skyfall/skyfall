@@ -1,0 +1,13 @@
+# Nmap 7.80 scan initiated Sun Apr  7 17:16:58 2024 as: nmap -T4 --min-rate 5000 -sC -sV -A -o skyfall -Pn 10.10.11.254
+Nmap scan report for 10.10.11.254 (10.10.11.254)
+Host is up (0.24s latency).
+Not shown: 960 closed ports, 38 filtered ports
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.9p1 Ubuntu 3ubuntu0.6 (Ubuntu Linux; protocol 2.0)
+80/tcp open  http    nginx 1.18.0 (Ubuntu)
+|_http-server-header: nginx/1.18.0 (Ubuntu)
+|_http-title: Skyfall - Introducing Sky Storage!
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Apr  7 17:17:18 2024 -- 1 IP address (1 host up) scanned in 19.29 seconds

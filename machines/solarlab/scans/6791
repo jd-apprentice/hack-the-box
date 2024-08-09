@@ -1,0 +1,11 @@
+# Nmap 7.80 scan initiated Sat May 11 17:21:44 2024 as: nmap -p6791 -sCV -o 6791 -Pn 10.129.57.119
+Nmap scan report for solarlab.htb (10.129.57.119)
+Host is up (0.16s latency).
+
+PORT     STATE SERVICE VERSION
+6791/tcp open  http    nginx 1.24.0
+|_http-server-header: nginx/1.24.0
+|_http-title: Did not follow redirect to http://report.solarlab.htb:6791/
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat May 11 17:22:00 2024 -- 1 IP address (1 host up) scanned in 15.85 seconds

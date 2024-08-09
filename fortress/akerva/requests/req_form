@@ -1,0 +1,16 @@
+POST /wp-comments-post.php HTTP/1.1
+Host: 10.13.37.11
+Content-Length: 138
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+Origin: http://10.13.37.11
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.112 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Referer: http://10.13.37.11/index.php/2020/02/08/hello-world/?unapproved=48&moderation-hash=6a629a1f2496e62c694988fb9cfd3a85
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: wordpress_test_cookie=WP+Cookie+check
+Connection: close
+
+comment=Hola&author=Hola&email=Hola%40gmail.com&url=&wp-comment-cookies-consent=yes&submit=Post+Comment&comment_post_ID=1&comment_parent=0

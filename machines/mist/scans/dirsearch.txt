@@ -1,0 +1,78 @@
+# Dirsearch started Sat Mar 30 16:48:38 2024 as: dirsearch.py -u http://10.129.138.235
+
+403   303B   http://10.129.138.235:80/%C0%AE%C0%AE%C0%AF
+403   303B   http://10.129.138.235:80/%3f/
+403   303B   http://10.129.138.235:80/%ff
+403   303B   http://10.129.138.235:80/.ht_wsr.txt
+403   303B   http://10.129.138.235:80/.htaccess.bak1
+403   303B   http://10.129.138.235:80/.htaccess.sample
+403   303B   http://10.129.138.235:80/.htaccess.orig
+403   303B   http://10.129.138.235:80/.htaccess.save
+403   303B   http://10.129.138.235:80/.htaccess_orig
+403   303B   http://10.129.138.235:80/.htaccessOLD
+403   303B   http://10.129.138.235:80/.htaccessBAK
+403   303B   http://10.129.138.235:80/.htaccess_sc
+403   303B   http://10.129.138.235:80/.htaccess_extra
+403   303B   http://10.129.138.235:80/.htaccessOLD2
+403   303B   http://10.129.138.235:80/.htm
+403   303B   http://10.129.138.235:80/.html
+403   303B   http://10.129.138.235:80/.htpasswds
+403   303B   http://10.129.138.235:80/.httr-oauth
+403   303B   http://10.129.138.235:80/.htpasswd_test
+200     4KB  http://10.129.138.235:80/ADMIN.php
+200     4KB  http://10.129.138.235:80/Admin.php
+500   637B   http://10.129.138.235:80/Files/binder.autosave
+500   637B   http://10.129.138.235:80/Files/Docs/docs.checksum
+500   637B   http://10.129.138.235:80/Files/binder.backup
+500   637B   http://10.129.138.235:80/Files/user.lock
+500   637B   http://10.129.138.235:80/Files/search.indexes
+200     2KB  http://10.129.138.235:80/README.MD
+200     2KB  http://10.129.138.235:80/README.md
+200     2KB  http://10.129.138.235:80/ReadMe.md
+200     2KB  http://10.129.138.235:80/Readme.md
+403   303B   http://10.129.138.235:80/Trace.axd::$DATA
+400   330B   http://10.129.138.235:80/\..\..\..\..\..\..\..\..\..\etc\passwd
+200     4KB  http://10.129.138.235:80/admin.php
+403   303B   http://10.129.138.235:80/cgi-bin/
+200     1KB  http://10.129.138.235:80/cgi-bin/printenv.pl
+301   339B   http://10.129.138.235:80/data    -> REDIRECTS TO: http://10.129.138.235/data/
+200    48B   http://10.129.138.235:80/data/
+200     2KB  http://10.129.138.235:80/docs/
+301   339B   http://10.129.138.235:80/docs    -> REDIRECTS TO: http://10.129.138.235/docs/
+500   637B   http://10.129.138.235:80/files
+500   637B   http://10.129.138.235:80/files/cache/
+500   637B   http://10.129.138.235:80/files/
+500   637B   http://10.129.138.235:80/files/tmp/
+503   403B   http://10.129.138.235:80/examples/jsp/%252e%252e/%252e%252e/manager/html/
+503   403B   http://10.129.138.235:80/examples
+503   403B   http://10.129.138.235:80/examples/
+503   403B   http://10.129.138.235:80/examples/jsp/snp/snoop.jsp
+503   403B   http://10.129.138.235:80/examples/servlet/SnoopServlet
+503   403B   http://10.129.138.235:80/examples/servlets/servlet/CookieExample
+503   403B   http://10.129.138.235:80/examples/servlets/index.html
+503   403B   http://10.129.138.235:80/examples/servlets/servlet/RequestHeaderExample
+301   341B   http://10.129.138.235:80/images    -> REDIRECTS TO: http://10.129.138.235/images/
+200   774B   http://10.129.138.235:80/images/
+302     0B   http://10.129.138.235:80/index.php    -> REDIRECTS TO: http://10.129.138.235/?file=mist
+403   303B   http://10.129.138.235:80/index.php::$DATA
+302     0B   http://10.129.138.235:80/index.pHp    -> REDIRECTS TO: http://10.129.138.235/?file=mist
+302     0B   http://10.129.138.235:80/index.php.    -> REDIRECTS TO: http://10.129.138.235/?file=mist
+302     0B   http://10.129.138.235:80/index.php/login/    -> REDIRECTS TO: http://10.129.138.235/?file=mist
+200     4KB  http://10.129.138.235:80/install.php
+200     1KB  http://10.129.138.235:80/login.php
+403   422B   http://10.129.138.235:80/phpmyadmin/ChangeLog
+403   422B   http://10.129.138.235:80/phpmyadmin/doc/html/index.html
+403   422B   http://10.129.138.235:80/phpmyadmin/docs/html/index.html
+403   422B   http://10.129.138.235:80/phpmyadmin/README
+403   422B   http://10.129.138.235:80/phpmyadmin
+403   422B   http://10.129.138.235:80/phpmyadmin/
+403   422B   http://10.129.138.235:80/phpmyadmin/index.php
+403   422B   http://10.129.138.235:80/phpmyadmin/phpmyadmin/index.php
+403   422B   http://10.129.138.235:80/phpmyadmin/scripts/setup.php
+200     2KB  http://10.129.138.235:80/readme.md
+200    47B   http://10.129.138.235:80/robots.txt
+403   422B   http://10.129.138.235:80/server-status
+403   422B   http://10.129.138.235:80/server-status/
+403   422B   http://10.129.138.235:80/server-info
+403   303B   http://10.129.138.235:80/web.config::$DATA
+403   422B   http://10.129.138.235:80/webalizer

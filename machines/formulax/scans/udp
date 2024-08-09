@@ -1,0 +1,31 @@
+# Nmap 7.80 scan initiated Wed Mar 13 19:20:33 2024 as: nmap --top-ports 100 -T4 --min-rate 5000 -sV -sU -A -o udp 10.10.11.6
+Nmap scan report for chatbot.htb (10.10.11.6)
+Host is up (0.16s latency).
+Not shown: 93 open|filtered ports
+PORT     STATE  SERVICE      VERSION
+9/udp    closed discard
+67/udp   closed dhcps
+162/udp  open   snmp         net-snmp; net-snmp SNMPv3 server
+| snmp-info: 
+|   enterprise: net-snmp
+|   engineIDFormat: unknown
+|   engineIDData: eef18526553b8c6400000000
+|   snmpEngineBoots: 15
+|_  snmpEngineTime: 1h42m32s
+445/udp  closed microsoft-ds
+518/udp  closed ntalk
+623/udp  closed asf-rmcp
+1433/udp closed ms-sql-s
+Device type: remote management|phone|general purpose|webcam|storage-misc
+Running: Avocent embedded, Google Android 2.X, Linux 2.6.X, AXIS embedded, ZyXEL embedded
+OS CPE: cpe:/o:google:android:2.2 cpe:/o:linux:linux_kernel:2.6 cpe:/o:linux:linux_kernel:2.6.17 cpe:/h:axis:210a_network_camera cpe:/h:axis:211_network_camera cpe:/h:zyxel:nsa-210
+Too many fingerprints match this host to give specific OS details
+Network Distance: 2 hops
+
+TRACEROUTE (using port 518/udp)
+HOP RTT       ADDRESS
+1   180.99 ms 10.10.14.1 (10.10.14.1)
+2   181.05 ms chatbot.htb (10.10.11.6)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Mar 13 19:28:44 2024 -- 1 IP address (1 host up) scanned in 491.24 seconds

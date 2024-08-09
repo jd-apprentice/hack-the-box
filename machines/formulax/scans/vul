@@ -1,0 +1,125 @@
+# Nmap 7.80 scan initiated Wed Mar 13 19:12:24 2024 as: nmap --script vuln -o vul 10.10.11.6
+Pre-scan script results:
+| broadcast-avahi-dos: 
+|   Discovered hosts:
+|     224.0.0.251
+|   After NULL UDP avahi packet DoS (CVE-2011-1002).
+|_  Hosts are all up (not vulnerable).
+Nmap scan report for 10.10.11.6 (10.10.11.6)
+Host is up (0.18s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE
+22/tcp open  ssh
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+80/tcp open  http
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.10.11.6
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: http://10.10.11.6:80/
+|     Form id: email
+|     Form action: javascript:handleRequest()
+|     
+|     Path: http://10.10.11.6:80/static/register.html
+|     Form id: name
+|     Form action: javascript:handleRegisterRequest()
+|     
+|     Path: http://10.10.11.6:80/static/index.html
+|     Form id: email
+|_    Form action: javascript:handleRequest()
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+| http-enum: 
+|   /admin/: Possible admin folder
+|   /admin/admin/: Possible admin folder
+|   /admin/account.php: Possible admin folder
+|   /admin/index.php: Possible admin folder
+|   /admin/login.php: Possible admin folder
+|   /admin/admin.php: Possible admin folder
+|   /admin/index.html: Possible admin folder
+|   /admin/login.html: Possible admin folder
+|   /admin/admin.html: Possible admin folder
+|   /admin/home.php: Possible admin folder
+|   /admin/controlpanel.php: Possible admin folder
+|   /admin/account.html: Possible admin folder
+|   /admin/admin_login.html: Possible admin folder
+|   /admin/cp.php: Possible admin folder
+|   /admin/admin_login.php: Possible admin folder
+|   /admin/admin-login.php: Possible admin folder
+|   /admin/home.html: Possible admin folder
+|   /admin/admin-login.html: Possible admin folder
+|   /admin/adminLogin.html: Possible admin folder
+|   /admin/controlpanel.html: Possible admin folder
+|   /admin/cp.html: Possible admin folder
+|   /admin/adminLogin.php: Possible admin folder
+|   /admin/account.cfm: Possible admin folder
+|   /admin/index.cfm: Possible admin folder
+|   /admin/login.cfm: Possible admin folder
+|   /admin/admin.cfm: Possible admin folder
+|   /admin/admin_login.cfm: Possible admin folder
+|   /admin/controlpanel.cfm: Possible admin folder
+|   /admin/cp.cfm: Possible admin folder
+|   /admin/adminLogin.cfm: Possible admin folder
+|   /admin/admin-login.cfm: Possible admin folder
+|   /admin/home.cfm: Possible admin folder
+|   /admin/account.asp: Possible admin folder
+|   /admin/index.asp: Possible admin folder
+|   /admin/login.asp: Possible admin folder
+|   /admin/admin.asp: Possible admin folder
+|   /admin/home.asp: Possible admin folder
+|   /admin/controlpanel.asp: Possible admin folder
+|   /admin/admin-login.asp: Possible admin folder
+|   /admin/cp.asp: Possible admin folder
+|   /admin/admin_login.asp: Possible admin folder
+|   /admin/adminLogin.asp: Possible admin folder
+|   /admin/account.aspx: Possible admin folder
+|   /admin/index.aspx: Possible admin folder
+|   /admin/login.aspx: Possible admin folder
+|   /admin/admin.aspx: Possible admin folder
+|   /admin/home.aspx: Possible admin folder
+|   /admin/controlpanel.aspx: Possible admin folder
+|   /admin/admin-login.aspx: Possible admin folder
+|   /admin/cp.aspx: Possible admin folder
+|   /admin/admin_login.aspx: Possible admin folder
+|   /admin/adminLogin.aspx: Possible admin folder
+|   /admin/index.jsp: Possible admin folder
+|   /admin/login.jsp: Possible admin folder
+|   /admin/admin.jsp: Possible admin folder
+|   /admin/home.jsp: Possible admin folder
+|   /admin/controlpanel.jsp: Possible admin folder
+|   /admin/admin-login.jsp: Possible admin folder
+|   /admin/cp.jsp: Possible admin folder
+|   /admin/account.jsp: Possible admin folder
+|   /admin/admin_login.jsp: Possible admin folder
+|   /admin/adminLogin.jsp: Possible admin folder
+|   /Admin/: Possible admin folder
+|   /admin/backup/: Possible backup
+|   /admin/download/backup.sql: Possible database backup
+|   /admin/upload.php: Admin File Upload
+|   /admin/CiscoAdmin.jhtml: Cisco Collaboration Server
+|   /admin/libraries/ajaxfilemanager/ajaxfilemanager.php: Log1 CMS
+|   /admin/view/javascript/fckeditor/editor/filemanager/connectors/test.html: OpenCart/FCKeditor File upload
+|   /admin/includes/tiny_mce/plugins/tinybrowser/upload.php: CompactCMS or B-Hind CMS/FCKeditor File upload
+|   /admin/includes/FCKeditor/editor/filemanager/upload/test.html: ASP Simple Blog / FCKeditor File Upload
+|   /admin/jscript/upload.php: Lizard Cart/Remote File upload
+|   /admin/jscript/upload.html: Lizard Cart/Remote File upload
+|   /admin/jscript/upload.pl: Lizard Cart/Remote File upload
+|   /admin/jscript/upload.asp: Lizard Cart/Remote File upload
+|   /admin/environment.xml: Moodle files
+|_  /logout/: Potentially interesting folder
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+| http-vuln-cve2011-3192: 
+|   VULNERABLE:
+|   Apache byterange filter DoS
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2011-3192  BID:49303
+|       The Apache web server is vulnerable to a denial of service attack when numerous
+|       overlapping byte ranges are requested.
+|     Disclosure date: 2011-08-19
+|     References:
+|       https://www.securityfocus.com/bid/49303
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3192
+|       https://www.tenable.com/plugins/nessus/55976
+|_      https://seclists.org/fulldisclosure/2011/Aug/175
+
+# Nmap done at Wed Mar 13 19:20:37 2024 -- 1 IP address (1 host up) scanned in 493.23 seconds

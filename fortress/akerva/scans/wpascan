@@ -1,0 +1,95 @@
+_______________________________________________________________
+         __          _______   _____
+         \ \        / /  __ \ / ____|
+          \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+           \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \
+            \  /\  /  | |     ____) | (__| (_| | | | |
+             \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+
+         WordPress Security Scanner by the WPScan Team
+                         Version 3.8.25
+       Sponsored by Automattic - https://automattic.com/
+       @_WPScan_, @ethicalhack3r, @erwan_lr, @firefart
+_______________________________________________________________
+
+[32m[+][0m URL: http://10.13.37.11/ [10.13.37.11]
+[32m[+][0m Started: Thu Mar 28 02:36:53 2024
+
+Interesting Finding(s):
+
+[32m[+][0m Headers
+ | Interesting Entry: Server: Apache/2.4.29 (Ubuntu)
+ | Found By: Headers (Passive Detection)
+ | Confidence: 100%
+
+[32m[+][0m XML-RPC seems to be enabled: http://10.13.37.11/xmlrpc.php
+ | Found By: Headers (Passive Detection)
+ | Confidence: 100%
+ | Confirmed By:
+ |  - Link Tag (Passive Detection), 30% confidence
+ |  - Direct Access (Aggressive Detection), 100% confidence
+ | References:
+ |  - http://codex.wordpress.org/XML-RPC_Pingback_API
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_ghost_scanner/
+ |  - https://www.rapid7.com/db/modules/auxiliary/dos/http/wordpress_xmlrpc_dos/
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_xmlrpc_login/
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_pingback_access/
+
+[32m[+][0m WordPress readme found: http://10.13.37.11/readme.html
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+
+[32m[+][0m The external WP-Cron seems to be enabled: http://10.13.37.11/wp-cron.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 60%
+ | References:
+ |  - https://www.iplocation.net/defend-wordpress-from-ddos
+ |  - https://github.com/wpscanteam/wpscan/issues/1299
+
+[32m[+][0m WordPress version 5.4 identified (Insecure, released on 2020-03-31).
+ | Found By: Emoji Settings (Passive Detection)
+ |  - http://10.13.37.11/, Match: 'wp-includes\/js\/wp-emoji-release.min.js?ver=5.4'
+ | Confirmed By: Meta Generator (Passive Detection)
+ |  - http://10.13.37.11/, Match: 'WordPress 5.4'
+
+[32m[+][0m WordPress theme in use: twentyfifteen
+ | Location: http://10.13.37.11/wp-content/themes/twentyfifteen/
+ | Last Updated: 2023-11-07T00:00:00.000Z
+ | Readme: http://10.13.37.11/wp-content/themes/twentyfifteen/readme.txt
+ | [33m[!][0m The version is out of date, the latest version is 3.6
+ | Style URL: http://10.13.37.11/wp-content/themes/twentyfifteen/style.css?ver=20190507
+ | Style Name: Twenty Fifteen
+ | Style URI: https://wordpress.org/themes/twentyfifteen/
+ | Description: Our 2015 default theme is clean, blog-focused, and designed for clarity. Twenty Fifteen's simple, st...
+ | Author: the WordPress team
+ | Author URI: https://wordpress.org/
+ |
+ | Found By: Css Style In Homepage (Passive Detection)
+ |
+ | Version: 2.5 (80% confidence)
+ | Found By: Style (Passive Detection)
+ |  - http://10.13.37.11/wp-content/themes/twentyfifteen/style.css?ver=20190507, Match: 'Version: 2.5'
+
+[32m[+][0m Enumerating Users (via Passive and Aggressive Methods)
+                                                                                 Brute Forcing Author IDs - Time: 00:00:00 <    > (0 / 10)  0.00%  ETA: ??:??:?? Brute Forcing Author IDs - Time: 00:00:00 <    > (1 / 10) 10.00%  ETA: 00:00:09 Brute Forcing Author IDs - Time: 00:00:00 <    > (2 / 10) 20.00%  ETA: 00:00:04 Brute Forcing Author IDs - Time: 00:00:01 <=   > (3 / 10) 30.00%  ETA: 00:00:03 Brute Forcing Author IDs - Time: 00:00:01 <=   > (4 / 10) 40.00%  ETA: 00:00:02 Brute Forcing Author IDs - Time: 00:00:02 <==  > (5 / 10) 50.00%  ETA: 00:00:02 Brute Forcing Author IDs - Time: 00:00:02 <=== > (9 / 10) 90.00%  ETA: 00:00:00 Brute Forcing Author IDs - Time: 00:00:02 <==> (10 / 10) 100.00% Time: 00:00:02
+
+[34m[i][0m User(s) Identified:
+
+[32m[+][0m aas
+ | Found By: Rss Generator (Passive Detection)
+ | Confirmed By:
+ |  Wp Json Api (Aggressive Detection)
+ |   - http://10.13.37.11/index.php/wp-json/wp/v2/users/?per_page=100&page=1
+ |  Author Id Brute Forcing - Author Pattern (Aggressive Detection)
+ |  Login Error Messages (Aggressive Detection)
+
+[33m[!][0m No WPScan API Token given, as a result vulnerability data has not been output.
+[33m[!][0m You can get a free API token with 25 daily requests by registering at https://wpscan.com/register
+
+[32m[+][0m Finished: Thu Mar 28 02:37:10 2024
+[32m[+][0m Requests Done: 54
+[32m[+][0m Cached Requests: 6
+[32m[+][0m Data Sent: 13.316 KB
+[32m[+][0m Data Received: 277.078 KB
+[32m[+][0m Memory used: 248.117 MB
+[32m[+][0m Elapsed time: 00:00:17

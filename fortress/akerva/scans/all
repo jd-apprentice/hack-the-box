@@ -1,0 +1,41 @@
+# Nmap 7.80 scan initiated Wed Mar 27 23:10:39 2024 as: nmap -p- -T4 --min-rate 5000 -sC -sV -A -o all 10.13.37.11
+Warning: 10.13.37.11 giving up on port because retransmission cap hit (6).
+Nmap scan report for 10.13.37.11 (10.13.37.11)
+Host is up (0.25s latency).
+Not shown: 65517 closed ports
+PORT      STATE    SERVICE       VERSION
+22/tcp    open     ssh           OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 0d:e4:41:fd:9f:a9:07:4d:25:b4:bd:5d:26:cc:4f:da (RSA)
+|   256 f7:65:51:e0:39:37:2c:81:7f:b5:55:bd:63:9c:82:b5 (ECDSA)
+|_  256 28:61:d3:5a:b9:39:f2:5b:d7:10:5a:67:ee:81:a8:5e (ED25519)
+80/tcp    open     http          Apache httpd 2.4.29 ((Ubuntu))
+|_http-generator: WordPress 5.4-alpha-47225
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+|_http-title: Root of the Universe &#8211; by @lydericlefebvre &amp; @akerva_fr
+|_https-redirect: ERROR: Script execution failed (use -d to debug)
+1369/tcp  filtered gv-us
+4136/tcp  filtered cl-db-request
+5000/tcp  open     http          Werkzeug httpd 0.16.0 (Python 2.7.15+)
+| http-auth: 
+| HTTP/1.0 401 UNAUTHORIZED\x0D
+|_  Basic realm=Authentication Required
+|_http-server-header: Werkzeug/0.16.0 Python/2.7.15+
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+9176/tcp  filtered unknown
+12886/tcp filtered unknown
+15301/tcp filtered unknown
+21871/tcp filtered unknown
+23617/tcp filtered unknown
+28149/tcp filtered unknown
+34217/tcp filtered unknown
+41359/tcp filtered unknown
+42535/tcp filtered unknown
+46152/tcp filtered unknown
+53129/tcp filtered unknown
+53964/tcp filtered unknown
+63051/tcp filtered unknown
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Mar 27 23:11:32 2024 -- 1 IP address (1 host up) scanned in 53.39 seconds

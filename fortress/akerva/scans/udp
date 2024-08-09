@@ -1,0 +1,22 @@
+# Nmap 7.80 scan initiated Thu Mar 28 00:03:21 2024 as: nmap -sU --open -T4 --top-ports 1000 -o udp 10.13.37.11
+Warning: 10.13.37.11 giving up on port because retransmission cap hit (6).
+Nmap scan report for 10.13.37.11 (10.13.37.11)
+Host is up (0.25s latency).
+Not shown: 986 closed ports
+PORT      STATE         SERVICE
+161/udp   open          snmp
+517/udp   open|filtered talk
+684/udp   open|filtered corba-iiop-ssl
+800/udp   open|filtered mdbs_daemon
+6971/udp  open|filtered unknown
+9877/udp  open|filtered unknown
+17459/udp open|filtered unknown
+17814/udp open|filtered unknown
+18331/udp open|filtered unknown
+19273/udp open|filtered unknown
+23176/udp open|filtered unknown
+35702/udp open|filtered unknown
+40711/udp open|filtered unknown
+53571/udp open|filtered unknown
+
+# Nmap done at Thu Mar 28 00:19:48 2024 -- 1 IP address (1 host up) scanned in 986.40 seconds

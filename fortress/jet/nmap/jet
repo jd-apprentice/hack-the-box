@@ -1,0 +1,117 @@
+# Nmap 7.80 scan initiated Mon Mar 18 20:18:41 2024 as: nmap -T4 --min-rate 5000 -sV -A -o jet 10.13.37.10
+Nmap scan report for 10.13.37.10 (10.13.37.10)
+Host is up (0.18s latency).
+Not shown: 977 closed ports
+PORT      STATE    SERVICE     VERSION
+22/tcp    open     ssh         OpenSSH 7.2p2 Ubuntu 4ubuntu2.4 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 62:f6:49:80:81:cf:f0:07:0e:5a:ad:e9:8e:1f:2b:7c (RSA)
+|   256 54:e2:7e:5a:1c:aa:9a:ab:65:ca:fa:39:28:bc:0a:43 (ECDSA)
+|_  256 93:bc:37:b7:e0:08:ce:2d:03:99:01:0a:a9:df:da:cd (ED25519)
+53/tcp    open     domain      ISC BIND 9.10.3-P4 (Ubuntu Linux)
+| dns-nsid: 
+|_  bind.version: 9.10.3-P4-Ubuntu
+80/tcp    open     http        nginx 1.10.3 (Ubuntu)
+|_http-server-header: nginx/1.10.3 (Ubuntu)
+|_http-title: Welcome to nginx on Debian!
+765/tcp   filtered webster
+1033/tcp  filtered netinfo
+1045/tcp  filtered fpitp
+2323/tcp  filtered 3d-nfsd
+4006/tcp  filtered pxc-spvr
+4449/tcp  filtered privatewire
+5101/tcp  filtered admdog
+5555/tcp  open     freeciv?
+| fingerprint-strings: 
+|   DNSVersionBindReqTCP, GenericLines, GetRequest, adbConnect: 
+|     enter your name:
+|     [31mMember manager!
+|     edit
+|     change name
+|     gift
+|     exit
+|   NULL: 
+|     enter your name:
+|   SMBProgNeg: 
+|     enter your name:
+|     [31mMember manager!
+|     edit
+|     change name
+|     gift
+|     exit
+|     invalid option!
+|     [31mMember manager!
+|     edit
+|     change name
+|     gift
+|     exit
+|     invalid option!
+|     [31mMember manager!
+|     edit
+|     change name
+|     gift
+|     exit
+|     invalid option!
+|     [31mMember manager!
+|     edit
+|     change name
+|     gift
+|     exit
+|     invalid option!
+|     [31mMember manager!
+|     edit
+|     change name
+|     gift
+|     exit
+|     invalid option!
+|     [31mMember manager!
+|     edit
+|     change name
+|     gift
+|     exit
+|     invalid option!
+|     [31mMember manager!
+|     edit
+|     change name
+|     gift
+|     exit
+|     invalid option!
+|     [31mMember manager!
+|     edit
+|     change name
+|     gift
+|     exit
+|     invalid option!
+|     [31mMember manager!
+|     edit
+|     change name
+|     gift
+|     exit
+|_    invalid option!
+6025/tcp  filtered x11
+6059/tcp  filtered X11:59
+6792/tcp  filtered unknown
+6839/tcp  filtered unknown
+7019/tcp  filtered doceri-ctl
+7777/tcp  open     cbt?
+| fingerprint-strings: 
+|   Arucer, DNSStatusRequestTCP, DNSVersionBindReqTCP, GenericLines, GetRequest, HTTPOptions, RPCCheck, RTSPRequest, Socks5, X11Probe: 
+|     --==[[ Spiritual Memo ]]==--
+|     Create a memo
+|     Show memo
+|     Delete memo
+|     Can't you read mate?
+|   NULL: 
+|     --==[[ Spiritual Memo ]]==--
+|     Create a memo
+|     Show memo
+|_    Delete memo
+8084/tcp  filtered unknown
+9900/tcp  filtered iua
+15002/tcp filtered onep-tls
+27356/tcp filtered unknown
+41511/tcp filtered unknown
+49153/tcp filtered unknown
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Mar 18 20:21:39 2024 -- 1 IP address (1 host up) scanned in 177.76 seconds

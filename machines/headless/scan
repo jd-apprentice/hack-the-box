@@ -1,0 +1,115 @@
+
+ Analyzing URL, please wait ...
+
+
+  _                     _     _
+ | |__  _   _ _ __ ___ | |__ | | ___
+ | '_ \| | | | '_ ` _ \| '_ \| |/ _ \
+ | | | | |_| | | | | | | |_) | |  __/
+ |_| |_|\__,_|_| |_| |_|_.__/|_|\___|
+
+ (https://github.com/rfc-st/humble | v.2024-03-23)
+
+
+[0. Info]
+
+ Date : 2024/03/23 - 16:56:01
+ URL  : http://10.10.11.8:5000
+
+
+[1. Missing HTTP Security Headers]
+
+ Cache-Control
+ Directives for caching in both requests and responses.
+ Ref: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control
+
+ Clear-Site-Data
+ Clears browsing data (cookies, storage, cache) associated with the requesting website.
+ Ref: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Clear-Site-Data
+
+ Cross-Origin-Embedder-Policy
+ Prevents documents and workers from loading non-same-origin requests unless allowed.
+ Ref: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cross-Origin-Embedder-Policy
+
+ Cross-Origin-Opener-Policy
+ Prevent other websites from gaining arbitrary window references to a page.
+ Ref: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cross-Origin-Opener-Policy
+
+ Cross-Origin-Resource-Policy
+ Protect servers against certain cross-origin or cross-site embedding of the returned source.
+ Ref: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cross-Origin_Resource_Policy_(CORP)
+
+ Content-Security-Policy
+ Detect and mitigate Cross Site Scripting (XSS) and data injection attacks, among others.
+ Ref: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy
+
+ NEL
+ Enables web applications to declare a reporting policy to report errors.
+ Ref: https://scotthelme.co.uk/network-error-logging-deep-dive/
+
+ Permissions-Policy
+ Previously called "Feature-Policy", allow and deny the use of browser features.
+ Ref: https://scotthelme.co.uk/goodbye-feature-policy-and-hello-permissions-policy/
+
+ Referrer-Policy
+ Controls how much referrer information should be included with requests.
+ Ref: https://scotthelme.co.uk/a-new-security-header-referrer-policy/
+
+ Strict-Transport-Security
+ Tell browsers that it should only be accessed using HTTPS, instead of using HTTP.
+ Ref: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security
+
+ X-Content-Type-Options
+ Indicate that MIME types in the "Content-Type" headers should be followed.
+ Ref: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options
+
+ X-Permitted-Cross-Domain-Policies
+ Limit which data external resources (e.g. Adobe Flash/PDF documents), can access on the domain.
+ Ref: https://owasp.org/www-project-secure-headers/#div-headers
+
+ X-Frame-Options
+ Prevents clickjacking attacks, limiting sources of embedded content.
+ Ref: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
+
+
+[2. Fingerprint HTTP Response Headers]
+
+ These headers can leak information about software, versions, hostnames or IP addresses:
+
+ Server [Generic HTTP Server/Content Delivery Network]
+ Werkzeug/2.2.2 Python/3.11.2
+
+
+[3. Deprecated HTTP Response Headers/Protocols and Insecure Values]
+
+ The following headers/protocols are deprecated or their values may be considered unsafe:
+
+ HTTP (URL Via Unsafe Scheme)
+ You are analyzing a domain via HTTP, in which the communications are not encrypted.
+ Ref: https://www.cloudflare.com/learning/ssl/why-is-http-not-secure/
+
+
+[4. Empty HTTP Response Headers Values]
+
+ The following headers have no value (could be equivalent to as if they were not enabled):
+
+ Nothing to report, all seems OK!
+
+
+[5. Browser Compatibility for Enabled HTTP Security Headers]
+
+ Content-Type: https://caniuse.com/?search=Content-Type
+ Set-Cookie: https://caniuse.com/?search=Set-Cookie
+
+
+.:
+
+Analysis done in 0.72 seconds! (changes with respect to the last analysis in parentheses)
+
+  Missing headers:              13 (0)
+  Fingerprint headers:          1 (0)
+  Deprecated/Insecure headers:  1 (0)
+  Empty headers:                0 (0)
+
+  Findings to review:           15 (0)
+

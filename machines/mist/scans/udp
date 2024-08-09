@@ -1,0 +1,6 @@
+# Nmap 7.80 scan initiated Sat Mar 30 16:38:55 2024 as: nmap -sU --open -T4 --top-ports 1000 -o udp 10.129.138.235
+Nmap scan report for 10.129.138.235 (10.129.138.235)
+Host is up (0.54s latency).
+All 1000 scanned ports on 10.129.138.235 (10.129.138.235) are open|filtered
+
+# Nmap done at Sat Mar 30 16:43:07 2024 -- 1 IP address (1 host up) scanned in 251.92 seconds

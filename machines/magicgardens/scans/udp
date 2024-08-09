@@ -1,0 +1,19 @@
+# Nmap 7.80 scan initiated Sat May 18 16:34:34 2024 as: nmap -sU --open -T4 --top-ports 1000 -o udp 10.129.63.2
+Warning: 10.129.63.2 giving up on port because retransmission cap hit (6).
+Nmap scan report for magicgardens.htb (10.129.63.2)
+Host is up (0.18s latency).
+Not shown: 989 closed ports
+PORT      STATE         SERVICE
+68/udp    open|filtered dhcpc
+1024/udp  open|filtered unknown
+1434/udp  open|filtered ms-sql-m
+1646/udp  open|filtered radacct
+16786/udp open|filtered unknown
+20848/udp open|filtered unknown
+21282/udp open|filtered unknown
+37783/udp open|filtered unknown
+43686/udp open|filtered unknown
+49180/udp open|filtered unknown
+51905/udp open|filtered unknown
+
+# Nmap done at Sat May 18 16:52:21 2024 -- 1 IP address (1 host up) scanned in 1066.73 seconds

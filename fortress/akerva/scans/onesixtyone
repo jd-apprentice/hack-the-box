@@ -1,0 +1,5 @@
+onesixtyone -c ~/Documents/Security/wordlists/common-snmp-community-strings-onesixtyone.txt 10.
+13.37.11
+Scanning 1 hosts, 121 communities
+10.13.37.11 [public] Linux Leakage 4.15.0-72-generic #81-Ubuntu SMP Tue Nov 26 12:20:02 UTC 2019 x86_64
+10.13.37.11 [public] Linux Leakage 4.15.0-72-generic #81-Ubuntu SMP Tue Nov 26 12:20:02 UTC 2019 x86_64

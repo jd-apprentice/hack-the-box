@@ -1,0 +1,41 @@
+# Nmap 7.80 scan initiated Tue Jul 23 18:56:42 2024 as: nmap -p3000 -T4 --min-rate 5000 -sV -o 3000 10.129.49.100
+Nmap scan report for 10.129.49.100
+Host is up (0.22s latency).
+
+PORT     STATE SERVICE VERSION
+3000/tcp open  ppp?
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port3000-TCP:V=7.80%I=7%D=7/23%Time=66A02727%P=x86_64-pc-linux-gnu%r(Ge
+SF:nericLines,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20t
+SF:ext/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x
+SF:20Request")%r(GetRequest,2A5A,"HTTP/1\.0\x20200\x20OK\r\nCache-Control:
+SF:\x20max-age=0,\x20private,\x20must-revalidate,\x20no-transform\r\nConte
+SF:nt-Type:\x20text/html;\x20charset=utf-8\r\nSet-Cookie:\x20i_like_gitea=
+SF:0104af3fb5f08f3f;\x20Path=/;\x20HttpOnly;\x20SameSite=Lax\r\nSet-Cookie
+SF::\x20_csrf=iCw-1Nncl_5lOh-uRepn6BNTYVI6MTcyMTc3MTgxNjI0OTkyNzM1OA;\x20P
+SF:ath=/;\x20Max-Age=86400;\x20HttpOnly;\x20SameSite=Lax\r\nX-Frame-Option
+SF:s:\x20SAMEORIGIN\r\nDate:\x20Tue,\x2023\x20Jul\x202024\x2021:56:56\x20G
+SF:MT\r\n\r\n<!DOCTYPE\x20html>\n<html\x20lang=\"en-US\"\x20class=\"theme-
+SF:auto\">\n<head>\n\t<meta\x20name=\"viewport\"\x20content=\"width=device
+SF:-width,\x20initial-scale=1\">\n\t<title>GreenHorn</title>\n\t<link\x20r
+SF:el=\"manifest\"\x20href=\"data:application/json;base64,eyJuYW1lIjoiR3Jl
+SF:ZW5Ib3JuIiwic2hvcnRfbmFtZSI6IkdyZWVuSG9ybiIsInN0YXJ0X3VybCI6Imh0dHA6Ly9
+SF:ncmVlbmhvcm4uaHRiOjMwMDAvIiwiaWNvbnMiOlt7InNyYyI6Imh0dHA6Ly9ncmVlbmhvcm
+SF:4uaHRiOjMwMDAvYXNzZXRzL2ltZy9sb2dvLnBuZyIsInR5cGUiOiJpbWFnZS9wbmciLCJza
+SF:XplcyI6IjUxMng1MTIifSx7InNyYyI6Imh0dHA6Ly9ncmVlbmhvcm4uaHRiOjMwMDAvYX")
+SF:%r(Help,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text
+SF:/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20R
+SF:equest")%r(HTTPOptions,1A4,"HTTP/1\.0\x20405\x20Method\x20Not\x20Allowe
+SF:d\r\nAllow:\x20HEAD\r\nAllow:\x20HEAD\r\nAllow:\x20GET\r\nCache-Control
+SF::\x20max-age=0,\x20private,\x20must-revalidate,\x20no-transform\r\nSet-
+SF:Cookie:\x20i_like_gitea=188566efc095ca62;\x20Path=/;\x20HttpOnly;\x20Sa
+SF:meSite=Lax\r\nSet-Cookie:\x20_csrf=avrx--XC46cy0JXfenHbbucp93U6MTcyMTc3
+SF:MTgyMjMwOTE3NzE2Nw;\x20Path=/;\x20Max-Age=86400;\x20HttpOnly;\x20SameSi
+SF:te=Lax\r\nX-Frame-Options:\x20SAMEORIGIN\r\nDate:\x20Tue,\x2023\x20Jul\
+SF:x202024\x2021:57:02\x20GMT\r\nContent-Length:\x200\r\n\r\n")%r(RTSPRequ
+SF:est,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/pla
+SF:in;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Reque
+SF:st");
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Jul 23 18:58:29 2024 -- 1 IP address (1 host up) scanned in 107.57 seconds

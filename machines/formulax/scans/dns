@@ -1,0 +1,10 @@
+# Nmap 7.80 scan initiated Wed Mar 13 19:19:44 2024 as: nmap --script dns-brute.domain -o dns chatbot.htb
+NSE: failed to initialize the script engine:
+/usr/bin/../share/nmap/nse_main.lua:818: 'dns-brute.domain' did not match a category, filename, or directory
+stack traceback:
+	[C]: in function 'error'
+	/usr/bin/../share/nmap/nse_main.lua:818: in local 'get_chosen_scripts'
+	/usr/bin/../share/nmap/nse_main.lua:1310: in main chunk
+	[C]: in ?
+
+QUITTING!

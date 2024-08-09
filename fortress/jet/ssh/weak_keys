@@ -1,0 +1,12 @@
+# Nmap 7.80 scan initiated Mon Mar 18 22:03:17 2024 as: nmap -p22 --script ssh-hostkey --script-args ssh_hostkey=full -o weak_keys 10.13.37.10
+Nmap scan report for 10.13.37.10 (10.13.37.10)
+Host is up (0.18s latency).
+
+PORT   STATE SERVICE
+22/tcp open  ssh
+| ssh-hostkey: 
+|   ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCzfo72P9KbpK9EZIE/AdtfSawGO5rjNM4GOu1Te5M2Z576c7aEVWv+284kw4OQ6JxQtFL56QsVaxRwxY9jGdpluJw5AWQpASy/Rx8q2JT7yGv0yGI8+tAIjLOMNmq5Qt6IjbDiSbL+gp6a+AsA0Mvm9OUYxBDM+LRsKFjwLDJCzFVKMFGc+gNrYJwpRa9RADsXN/19ogVYG8v9GvqFAJygMyTqVM0fbX3dDcAlMWgcHu81wMmQQGznjLe2gTY/sFAhASAfieVnSYIF11amofP8eUd+6jWL1wSlhRcW+j15tsPcotcfdpCrUJMFXq2tumXfNLJUWhv75Rf8pUeVobsx
+|   ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBLz7MT1sqbOHsYtNwWDfYJW8uCAPUL+zMJrW2DvIM7a9jG2RI40LNKjtiYv+M6DXjTWr3DK21kIWWK4TKMEl5Wo=
+|_  ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEEtJp2PzxXAhVXs6nNbgJXgRbLCiB/hcGJY5IgBKfS4
+
+# Nmap done at Mon Mar 18 22:03:22 2024 -- 1 IP address (1 host up) scanned in 5.88 seconds

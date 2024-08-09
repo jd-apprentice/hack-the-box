@@ -1,0 +1,7 @@
+301      GET        0l        0w        0c http://magicalbank.htb/api/sessions => http://magicalbank.htb/api/sessions/
+301     POST        0l        0w        0c http://magicalbank.htb/api/sessions => http://magicalbank.htb/api/sessions/
+301      GET        0l        0w        0c http://magicalbank.htb/api/sessions => http://magicalbank.htb/api/sessions/
+301     POST        0l        0w        0c http://magicalbank.htb/api/sessions => http://magicalbank.htb/api/sessions/
+301      PUT        0l        0w        0c http://magicalbank.htb/api/sessions => http://magicalbank.htb/api/sessions/
+301    PATCH        0l        0w        0c http://magicalbank.htb/api/sessions => http://magicalbank.htb/api/sessions/
+301  OPTIONS        0l        0w        0c http://magicalbank.htb/api/sessions => http://magicalbank.htb/api/sessions/

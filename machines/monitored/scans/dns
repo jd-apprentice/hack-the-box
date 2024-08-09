@@ -1,0 +1,15 @@
+# Nmap 7.80 scan initiated Fri Mar  8 00:42:58 2024 as: nmap --script dns-brute -o dns 10.10.11.248
+Nmap scan report for monitored.htb (10.10.11.248)
+Host is up (0.17s latency).
+Not shown: 996 closed ports
+PORT    STATE SERVICE
+22/tcp  open  ssh
+80/tcp  open  http
+389/tcp open  ldap
+443/tcp open  https
+
+Host script results:
+| dns-brute: 
+|_  DNS Brute-force hostnames: No results.
+
+# Nmap done at Fri Mar  8 00:43:38 2024 -- 1 IP address (1 host up) scanned in 40.37 seconds

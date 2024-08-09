@@ -1,0 +1,10 @@
+# Nmap 7.80 scan initiated Tue Jul 23 18:53:28 2024 as: nmap -T4 --min-rate 5000 -o greenhorn 10.129.49.100
+Nmap scan report for 10.129.49.100
+Host is up (0.18s latency).
+Not shown: 997 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+3000/tcp open  ppp
+
+# Nmap done at Tue Jul 23 18:53:35 2024 -- 1 IP address (1 host up) scanned in 6.87 seconds

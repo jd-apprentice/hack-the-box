@@ -1,0 +1,10 @@
+# Nmap 7.80 scan initiated Tue Jul 23 18:55:40 2024 as: nmap -p22 -T4 --min-rate 5000 -sV -o 22 10.129.49.100
+Nmap scan report for 10.129.49.100
+Host is up (0.18s latency).
+
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.9p1 Ubuntu 3ubuntu0.10 (Ubuntu Linux; protocol 2.0)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Jul 23 18:55:46 2024 -- 1 IP address (1 host up) scanned in 6.60 seconds
